@@ -13,12 +13,14 @@ function Detalls() {
 
     return (
         <div className={styles.body}>
-            <ButtonRetorn />
+       
+
             <img
                 className={styles.imatge}
                 src={`imatgesTargetes/${targeta.imatge}`}
                 alt={targeta.nom}
             />
+               <ButtonRetorn  className={styles.buttonReturn}/>
             <div className={styles.infoContent}>
                 <h1 className="headline2">{targeta.nom}</h1>
                 <p className="bodyLarge">{targeta.contingut}</p>

@@ -3,11 +3,22 @@
     width: 100%;
     height: 100%;
     bottom: 0;
+    top: 0;
+    position: relative;
 }
+
+.buttonReturn {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 10;
+}
+
+
 
 .imatge{
     width: 100%;
-height: 456px;
+height: 327px;
  object-fit: cover;
 }
 
