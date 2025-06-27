@@ -15,8 +15,8 @@ function Credits() {
       height: "100dvh",
       color: "var(--color-white)",
       position: "relative",
-      paddingLeft: "32px",
-      paddingRight: "32px",
+      paddingLeft: "24px",
+      paddingRight: "24px",
       paddingBottom: "80px", // deixem espai perquè la imatge no tapi text
       boxSizing: "border-box"
     }}>

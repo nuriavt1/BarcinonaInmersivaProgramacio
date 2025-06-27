@@ -3,7 +3,7 @@
     {"id": 1,
       "idCateg": 1,
       "nom": "Metge",
-      "imatge": "4.svg",
+      "imatge": "metge.png",
       "categoria": "General",
       "contingut": "A la ciutat, els metges oficials formen part del colledium medicorum, un grup selecte i respectat. Per arribar-hi, cal estudiar durant anys i superar exàmens rigorosos. Molts dels que ho aconsegueixen han estudiat a la universitat de Lleida, vinculada amb la prestigiosa universitat de Montpellier, la més reconeguda de tota la cristiandat.\nNomés uns pocs poden llicenciar-se com a metges. Els estudis són molt cars, i per això sovint només les famílies benestants poden permetre-s’ho. Els metges llicenciats són una autoritat: poden diagnosticar, prescriure i rebre pacients d’alt estatus.\nPerò no són els únics que curen. A la ciutat també hi ha sanadors, barbers i altres ajudants que practiquen la medicina per lliure, sense formació oficial. Els barbers, per exemple, realitzen pràctiques quirúrgiques com sagnar, treure queixals o cosir ferides. Molts tenen gran habilitat, però no el reconeixement dels metges formats.",
       "debloquejat": true
@@ -88,7 +88,7 @@
       "id": 11,
       "idCateg": 1,
       "nom": "Pesta Negra",
-      "imatge": "4.svg",
+      "imatge": "pestanegra.png",
       "categoria": "General",
        "debloquejat": false
     },
@@ -143,7 +143,7 @@
       "id": 18,
       "idCateg": 3,
       "nom": "Barcelona",
-      "imatge": "4.svg",
+      "imatge": "Barcelona.png",
       "categoria": "General",
        "debloquejat": false
     },

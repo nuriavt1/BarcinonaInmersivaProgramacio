@@ -1,0 +1,6 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* columna més petita */
+  gap: 8px; /* menys separació entre targetes */
+  width: 100%; /* o 80% si vols marge lateral */
+}

@@ -35,6 +35,7 @@ const navigate = useNavigate();
             >
               <Targeta 
                 {...targeta}
+                 className={styles.brillant}
                 onClick={() =>
                   navigate('/detalls', { state: { id: targeta.id } })
                 }
@@ -43,7 +44,11 @@ const navigate = useNavigate();
           ))}
         </div>
    <h2 className="headline3" /*className={styles.titol}*/ style={{ marginTop: "4px", marginBottom: "4px" }}>HAS DESBLOQUEJAT NOVES TARGETES!</h2>
-   <p className="bodyMediumBold" style={{ margin: 0 }}> Afegeix-les a la teva col·lecció! Pots consultar-les quan vulguis a la teva Biblioteca.</p>
+    <p className="bodySmall" style={{ margin: 0 }}> 
+Cada targeta conté informació sobre un lloc, un personatge o un moment clau de la Barcelona medieval.
+    </p>
+   <p className="bodyMediumBold" style={{ margin: 0 }}> 
+    Ja formen part de la teva col·lecció! Pots consultar-les sempre que vulguis a la Biblioteca.</p>
      <ButtonText className={styles.boto} onClick={handleRecollir} >
       Recollir
 <FaCheck size={24} color="var(--color-white)" />

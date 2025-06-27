@@ -1,0 +1,13 @@
+.body{
+    background-color: var(--color-blue800);
+    margin: 0px;
+    padding-top: 1px;
+  
+    height: 100%;
+    min-height: 100dvh;
+    color: var(--color-white);
+    display: flex;
+    flex-direction: column;
+    padding-left: 28px;
+    padding-right: 28px;
+}
