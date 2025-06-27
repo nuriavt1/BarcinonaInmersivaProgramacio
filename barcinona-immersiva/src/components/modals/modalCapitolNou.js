@@ -14,15 +14,23 @@ export default function ModalCapitolNou({ onClose }) {
           <>
             {/* Títol i subtítol dins d’un sol div */}
             <div className={styles.header}>
-              <p className="headline2" style={{margin : 0}}>Capítol {nivell}</p>
-              <h2 className="title2Bold" style={{margin : 0}}>{infoNivell.titol}</h2>
+              <p className="headline2" style={{ margin: 0 }}>Capítol {nivell}</p>
+              <h2 className="title2Bold" style={{ margin: 0 }}>{infoNivell.titol}</h2>
             </div>
 
-            <img style={{width : "150px"}} src={`/imatgesCapitol/${infoNivell.imatge}`} alt={`Capítol ${nivell}`} />
+            <img style={{ width: "150px" }} src={`/imatgesCapitol/${infoNivell.imatge}`} alt={`Capítol ${nivell}`} />
 
-            <p className="bodyLarge">{infoNivell.missioEndevinalles}</p>
-            <ButtonText onClick={onClose}>Ves a l'endevinalla</ButtonText>
-             <ButtonText onClick={onClose}>Ves al Mapa</ButtonText>
+            <div style={{ display: "flex", flexDirection: "column", gap: "8px", alignItems: "center" }}>
+              <img src={'/imatgesVaries/bannerMissio.svg'} style={{ width: "182px" }}></img>
+              <p className="bodyMedium" style={{ margin: "0px" }}>{infoNivell.missioEndevinalles}</p>
+            </div>
+
+            <ButtonText onClick={onClose}>Ves a l'endevinalla
+              <img src='/icones/puzzle.svg'></img>
+            </ButtonText>
+            <ButtonText onClick={onClose}>Ves al Mapa
+               <img src='/icones/map.svg'></img>
+            </ButtonText>
           </>
         ) : (
           <p>No s'han trobat dades per aquest nivell.</p>

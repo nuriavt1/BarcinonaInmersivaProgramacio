@@ -6,18 +6,18 @@
     bottom: 0;
     background-color: var(--color-brown900);
     color: var(--color-white);
-    
+    height: 100dvh;
 }
 
 .content{
-  /*  padding-top: 100px;*/
+    padding-top: 5dvh;
     padding-left: 32px;
     padding-right: 32px;
     display: flex;
     flex-direction: column;
 gap: 32px;
 align-items: center;
-height: 100dvh;
+height: 85dvh;
 
 }
 

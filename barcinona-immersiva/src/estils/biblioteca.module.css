@@ -8,6 +8,10 @@
     color: var(--color-white);
     display: flex;
     flex-direction: column;
+   /* padding-left: 28px;
+    padding-right: 28px;*/
+}
+.content{
     padding-left: 28px;
     padding-right: 28px;
 }

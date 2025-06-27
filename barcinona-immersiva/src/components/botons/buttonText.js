@@ -2,7 +2,7 @@ export default function ButtonText({ children, onClick, className = '' }) {
   return (
     <button
       onClick={onClick}
-      className={`headline3 ${className}`}
+      className={`headline4 ${className}`}
       style={{
         background: 'var(--color-red500)',
         border: 'none',
