@@ -1,0 +1,26 @@
+[
+    {
+        "num": 1,
+        "titol": "EL CAVALLER",
+        "imatge": "Cap1.png",
+        "missioEndevinalles": "Desplaça’t fins a Plaça Sant Jaume. Observant el teu entorn podràs resoldre l’endevinalla. Pots utilitzar el mapa per desplaçar-te."
+    },
+        {
+        "num": 2,
+        "titol": "LA MONJA",
+        "imatge": "Cap2.png",
+        "missioEndevinalles": "Desplaça’t fins a Plaça del Pi. Observant el teu entorn podràs resoldre l’endevinalla. Pots utilitzar el mapa per desplaçar-te."
+    },
+        {
+        "num": 3,
+        "titol": "EL COMERCIANT",
+        "imatge": "Cap3.png",
+        "missioEndevinalles": "Desplaça’t fins a Plaça de l'Àngel. Observant el teu entorn podràs resoldre l’endevinalla. Pots utilitzar el mapa per desplaçar-te."
+    },
+        {
+        "num": 4,
+        "titol": "ELS JUEUS",
+        "imatge": "Cap4.png",
+        "missioEndevinalles": "Desplaça’t fins al carrer Salomò Ben Adret. Observant el teu entorn podràs resoldre l’endevinalla. Pots utilitzar el mapa per desplaçar-te."
+    }
+]

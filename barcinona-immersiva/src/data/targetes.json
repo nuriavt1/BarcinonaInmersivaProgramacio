@@ -1,0 +1,223 @@
+{
+  "personatges": [
+    {"id": 1,
+      "idCateg": 1,
+      "nom": "Metge",
+      "imatge": "4.svg",
+      "categoria": "General",
+      "contingut": "A la ciutat, els metges oficials formen part del colledium medicorum, un grup selecte i respectat. Per arribar-hi, cal estudiar durant anys i superar exàmens rigorosos. Molts dels que ho aconsegueixen han estudiat a la universitat de Lleida, vinculada amb la prestigiosa universitat de Montpellier, la més reconeguda de tota la cristiandat.\nNomés uns pocs poden llicenciar-se com a metges. Els estudis són molt cars, i per això sovint només les famílies benestants poden permetre-s’ho. Els metges llicenciats són una autoritat: poden diagnosticar, prescriure i rebre pacients d’alt estatus.\nPerò no són els únics que curen. A la ciutat també hi ha sanadors, barbers i altres ajudants que practiquen la medicina per lliure, sense formació oficial. Els barbers, per exemple, realitzen pràctiques quirúrgiques com sagnar, treure queixals o cosir ferides. Molts tenen gran habilitat, però no el reconeixement dels metges formats.",
+      "debloquejat": true
+    },
+    {
+      "id": 2,
+      "idCateg": 2,
+      "nom": "Cavaller",
+      "imatge": "4.svg",
+      "categoria": "Noblesa",
+       "debloquejat": true
+    },
+    {
+      "id": 3,
+      "idCateg": 3,
+      "nom": "Pagès",
+      "imatge": "4.svg",
+      "categoria": "Pagesia",
+       "debloquejat": false
+    },
+    {
+      "id": 4,
+      "idCateg": 4,
+      "nom": "Monja",
+      "imatge": "4.svg",
+      "categoria": "Clergat",
+       "debloquejat": false
+    },
+    {
+      "id": 5,
+      "idCateg": 5,
+      "nom": "Dona",
+      "imatge": "4.svg",
+      "categoria": "...",
+       "debloquejat": false
+    },
+    {
+      "id": 6,
+      "idCateg": 6,
+      "nom": "Nens",
+      "imatge": "4.svg",
+      "categoria": "...",
+       "debloquejat": false
+    },
+    {
+      "id": 7,
+      "idCateg": 7,
+      "nom": "Esclau",
+      "imatge": "4.svg",
+      "categoria": "...",
+      "contingut": "Barcinona està plena d’esclaus, un de cada deu habitants és esclau. Desde la Pesta Negra del 1348 va aparèixer molta oferta de treball i els propietaris no volen pujar el salari als treballadors, per això recorreixen als esclaus.\nProvenen de tot arreu de la mediterrània. La venta d’aquests esclaus s’acostuma a efectuar en la Llotja. Majoritàriament son esclaus i es fa una subhasta pública per adjudicar al millor postor.",
+       "debloquejat": false
+    },
+    {
+      "id": 8,
+      "idCateg": 8,
+      "nom": "Mercader",
+      "imatge": "4.svg",
+      "categoria": "Comerç",
+       "debloquejat": false
+    },
+    {
+      "id": 9,
+      "idCateg": 9,
+      "imatge": "4.svg",
+      "nom": "Mostassaf",
+      "categoria": "Comerç",
+       "debloquejat": false
+    },
+    {
+      "id": 10,
+      "idCateg": 10,
+      "nom": "Jueu",
+      "imatge": "4.svg",
+      "categoria": "Jueus",
+      "contingut": "La comunitat jueva de Barcelona va ser la més important de tota la corona aragonesa. Diuen fins hi tot que són ells els inventors de la escudella catalana…\nTenen terres a Montjuïc, Pedralbes o Sarrià. A Barcelona viuen agrupats dins de Call.\nEls jueus són fàcils d’identificar desde que l'església els va obligar a vestirse de forma diferenciada. Els homes, una capa amb caputxa i una rodeja groga o vermella, les dones al cap. També els va obligar a viure agrupats.\n\nSón els tresors del rei perquè són una font d’ingressos. Només el rei els pot jutjar. Són coneguts per ser prestamistes, a diferencia dels cristians que se'ls és prohibit fer prestams.\n\nMentre que per als cristians la educació no era obligatoria, els jueus estaven obligats a anar a l’escola i aprendre del Torah i el Talmud, i dominen l’art de l’escriptura i el préstec, l’estudi de la medicina i la astronomia.",
+       "debloquejat": false
+    }
+  ],
+  "conceptes": [
+    {
+      "id": 11,
+      "idCateg": 1,
+      "nom": "Pesta Negra",
+      "imatge": "4.svg",
+      "categoria": "General",
+       "debloquejat": false
+    },
+    {"id": 12,
+      "idCateg": 2,
+      "nom": "Porgrom Jueu (1391)",
+      "imatge": "4.svg",
+      "categoria": "Jueus",
+       "debloquejat": false
+    },
+    {"id": 13,
+      "idCateg": 3,
+      "nom": "Vassallatge",
+      "imatge": "4.svg",
+      "categoria": "Pagesia",
+       "debloquejat": false
+    },
+    {
+      "id": 14,
+      "idCateg": 4,
+      "nom": "Cofraria",
+      "imatge": "4.svg",
+      "categoria": "Comerç",
+       "debloquejat": false
+    },
+    {
+      "id": 15,
+      "idCateg": 5,
+      "nom": "Consell de Cent",
+      "imatge": "4.svg",
+      "categoria": "Comerç",
+       "debloquejat": false
+    }
+  ],
+  "localitzacions": [
+    {
+      "id": 16,
+      "idCateg": 1,
+      "nom": "Apoteca",
+      "imatge": "4.svg",
+      "categoria": "General",
+       "debloquejat": false
+    },
+    {"id": 17,
+      "idCateg": 2,
+      "nom": "El Raval",
+      "imatge": "4.svg",
+      "categoria": "Pagesia",
+       "debloquejat": false
+    },
+    {
+      "id": 18,
+      "idCateg": 3,
+      "nom": "Barcelona",
+      "imatge": "4.svg",
+      "categoria": "General",
+       "debloquejat": false
+    },
+    {
+      "id": 19,
+      "idCateg": 4,
+      "nom": "Plaça Sant Jaume",
+      "imatge": "4.svg",
+      "categoria": "...",
+       "debloquejat": false
+    },
+    {
+      "id": 20,
+      "idCateg": 5,
+      "nom": "Casa de la Ciutat",
+      "imatge": "4.svg",
+      "categoria": "Comerç",
+       "debloquejat": false
+    },
+    {
+      "id": 21,
+      "idCateg": 6,
+      "nom": "Plaça del Rei",
+      "imatge": "4.svg",
+      "categoria": "Noblesa",
+       "debloquejat": false
+    },
+    {
+      "id": 22,
+      "idCateg": 7,
+      "nom": "La Catedral",
+      "imatge": "4.svg",
+      "categoria": "Clergat",
+       "debloquejat": false
+    },
+    {
+      "id": 23,
+      "idCateg": 8,
+      "nom": "Santa Maria del Mar",
+      "imatge": "4.svg",
+      "categoria": "Clergat",
+       "debloquejat": false
+    },
+    {
+      "id": 24,
+      "idCateg": 9,
+      "nom": "Santa Maria del Pi",
+      "imatge": "4.svg",
+      "categoria": "Clergat",
+       "debloquejat": false
+    },
+    
+    {
+      "id": 10,
+      "nom": "La plaça del Blat",
+      "imatge": "4.svg",
+      "categoria": "Comerç",
+      "contingut": "Actualment trepitges la Plaça de l’Àngel i segurament només veus una boca de metro. Però si mires bé... sota els teus peus hi ha segles d’història. Muralles, forns, crits, justícia… i fam.\n\nA la plaça del Blat es trobava el gran mercat del blat i dels cereals. Els habitants van a recollir el Blat, a casa fan farina, barregen amb aigua, amasen i van a un forn per fer el pa.\nEra tan important que marcava el centre exacte de la ciutat: una pedra al terra indicava els límits dels quatre barris que dividien Barcelona.\n\nLa plaça creixia a mida que ho feia la ciutat. L’any 1351 van començar a enderrocar cases, murs i arcades per fer més espai. Allà on abans hi havia un forn, van construir una font o safareig amb brocs d’aigua.\n\nTambé era un lloc de conflictes i revoltes. Durant el “Mal any primer”, la falta de blat va fer esclatar el descontentament del poble.\nAprofitant una porta de la muralla romana, aquí s’hi trobava la Cort del Veguer: jutjat i presó alhora. L’any 1343 van fer reformes per millorar-la: hi van posar una campana que sonava quan es feia fosc. El poble la coneixia com el “seny del lladre”.\nPerò les obres no van canviar gran cosa: la presó seguia sent un forat humit, brut i pudent. Els presos només tenien un petit finestral amb reixa per veure el carrer… si el carceller ho permetia."
+    },
+    {
+      "id": 25,
+      "idCateg": 11,
+      "nom": "El Call",
+      "imatge": "4.svg",
+      "categoria": "Jueus",
+       "debloquejat": false
+    },
+    {
+      "id": 26,
+      "idCateg": 12,
+      "nom": "La Muralla",
+      "imatge": "4.svg",
+      "categoria": "General",
+       "debloquejat": false
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+.body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-brown100);
+    padding-bottom: 100px;
+    gap: 30px;
+}
+
+.inputs {
+
+    display: flex;
+   /* flex-direction:column;*/
+    flex-wrap: wrap;
+    align-items: left;
+    gap: 20px;
+}
+
+.imatge {
+width: 100%;
+}
+
+.contenidorBanner {
+ display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: white;
+}
+
+/*NIVELLS GENERAL*/
+.mainBody {
+    background-color: var(--color-brown100);
+ top: 0;
+}
+

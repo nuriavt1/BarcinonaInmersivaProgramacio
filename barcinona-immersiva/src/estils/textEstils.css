@@ -1,0 +1,73 @@
+.headline1 {
+  font-family: 'Pirata One';
+  font-size: 82px;
+}
+
+.headline2 {
+  font-family: 'Pirata One';
+  font-size: 48px;
+}
+
+.headline3 {
+  font-family: 'Pirata One';
+  font-size: 32px;
+}
+
+.title1 {
+  font-family: 'Futura Bk BT';
+  font-size: 29px;
+}
+
+.title1Bold {
+  font-family: 'Futura Md BT';
+  font-size: 29px;
+  font-weight: Medium;
+}
+
+.title2 {
+  font-family: 'Futura Bk BT';
+  font-size: 24px;
+  font-weight: Book;
+}
+
+.title2Bold {
+  font-family: 'Futura Md BT';
+  font-size: 24px;
+  font-weight: Medium;
+}
+
+.bodyLarge {
+  font-family: 'Futura Bk BT';
+  font-size: 19px;
+  font-weight: Book;
+}
+
+.bodyLargeBold {
+  font-family: 'Futura Md BT';
+  font-size: 19px;
+  font-weight: Medium;
+}
+
+.bodyMedium {
+  font-family: 'Futura Bk BT';
+  font-size: 17px;
+  font-weight: Book;
+}
+
+.bodyMediumBold {
+  font-family: 'Futura Md BT';
+  font-size: 17px;
+  font-weight: Medium;
+}
+
+.bodySmall {
+  font-family: 'Futura Bk BT';
+  font-size: 14px;
+  font-weight: Book;
+}
+
+.bodySmallBold {
+  font-family: 'Futura Md BT';
+  font-size: 14px;
+  font-weight: Medium;
+}

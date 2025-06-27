@@ -1,0 +1,12 @@
+.targeta {
+    width: 100px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imatge {
+    width: 100px;
+    height: 142px;
+}

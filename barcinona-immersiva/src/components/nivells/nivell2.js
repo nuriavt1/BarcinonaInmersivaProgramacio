@@ -1,0 +1,117 @@
+import { useState } from "react";
+import styles from "../../estils/nivells.module.css";
+import InputLletra from "../inputs/inputLletra";
+import ButtonText from "../botons/buttonText";
+import endevinalles from "../../data/endevinalles.json";
+import { useVideos } from "../../context/videoContext";
+import { useTargetes } from "../../context/targetesContext";
+import { useNivell } from "../../context/nivellContext";
+import ModalResposta from "../modals/modalResposta";
+import ModalDesbloqueigTargetes from "../modals/modalDesbloqueigTargetes";
+
+export default function Nivell2() {
+  const endevinalla = endevinalles.find((e) => e.nivell === 2);
+  const respostaCorrectaText = endevinalla.resposta.toUpperCase();
+  const totalLletres = respostaCorrectaText.length;
+
+  const { desbloquejaVideo } = useVideos();
+  const { desbloquejaTargeta, getTargetaPerId } = useTargetes();
+  const { nivell, setNivell } = useNivell();
+
+  const [letters, setLetters] = useState(Array(totalLletres).fill(""));
+  const [letterStates, setLetterStates] = useState(Array(totalLletres).fill(null));
+  const [respostaCorrecta, setRespostaCorrecta] = useState(false);
+  const [mostraModal, setMostraModal] = useState(false);
+  const [mostraModalDesbloqueig, setMostraModalDesbloqueig] = useState(false);
+  const [targetesDesbloquejades, setTargetesDesbloquejades] = useState([]);
+
+  const handleChange = (index, char) => {
+    const newLetters = [...letters];
+    newLetters[index] = char;
+    setLetters(newLetters);
+  };
+
+  const comprovarResposta = () => {
+    const comparacio = letters.map(
+      (lletra, i) => lletra.toUpperCase() === respostaCorrectaText[i]
+    );
+    setLetterStates(comparacio);
+
+    const esCorrecte = comparacio.every(Boolean);
+    setRespostaCorrecta(esCorrecte);
+    setMostraModal(true);
+
+    if (esCorrecte) {
+      desbloquejaVideo(3); // o el que toqui
+      endevinalla.targetesDesbloquejades.forEach((id) => desbloquejaTargeta(id));
+
+      const targetes = endevinalla.targetesDesbloquejades
+        .map(getTargetaPerId)
+        .filter(Boolean);
+
+      setTargetesDesbloquejades(targetes);
+    //  setNivell(nivell + 1); // puja nivell
+    }
+  };
+
+  return (
+    <div className={styles.body}>
+      <img className={styles.imatge} src="/imatgesVaries/foto1.png" />
+
+      <div
+        className="contenidorBanner"
+        style={{
+          backgroundImage: "url('/imatgesVaries/enunciats.svg')",
+          backgroundSize: "contain",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          height: "180px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          color: "var(--color-brown800)",
+        }}
+      >
+        <p>{endevinalla.pregunta}</p>
+      </div>
+
+      <div className={styles.inputs}>
+        {letters.map((lletra, i) => (
+          <InputLletra
+          key={i} 
+            index={i}
+            value={lletra}
+            onChange={handleChange}
+            onNext={() => { }}
+            onBackspace={() => { }}
+            correct={letterStates[i]}
+          />
+
+        ))}
+      </div>
+
+      <ButtonText onClick={comprovarResposta}>
+        <p>Enviar</p>
+      </ButtonText>
+
+      {mostraModal && (
+        <ModalResposta
+          correcte={respostaCorrecta}
+          onTanca={() => {
+            setMostraModal(false);
+            if (respostaCorrecta) {
+              setMostraModalDesbloqueig(true);
+            }
+          }}
+        />
+      )}
+
+      {mostraModalDesbloqueig && (
+        <ModalDesbloqueigTargetes
+          targetes={targetesDesbloquejades}
+          onClose={() => setMostraModalDesbloqueig(false)}
+        />
+      )}
+    </div>
+  );
+}

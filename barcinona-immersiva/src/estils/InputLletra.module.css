@@ -1,0 +1,39 @@
+.input {
+
+      all: unset; /* neteja tot, inclòs padding i borders nadius */
+  appearance: none; /* treu estils de Safari */
+  -webkit-appearance: none;
+  box-sizing: border-box;
+
+
+  width: 40px;
+  height: 40px;
+  margin: 1px;
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  border-radius: 4px;
+  border: 0px solid #ccc;
+  color: var(--color-neutrals600);
+  background-color: var(--color-neutrals50);
+
+   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.correct {
+  background-color: var(--color-blue100);
+}
+
+.incorrect {
+  background-color: var(--color-red100);
+  border: 2px solid #c33413;
+}
+
+.empty {
+  background-color: var(--color-brown200);
+  box-shadow: 5px 5px 0 var(--color-neutrals400);
+}
+
+.filled {
+  background-color: var(--color-neutrals50);
+}

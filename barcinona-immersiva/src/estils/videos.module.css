@@ -1,0 +1,57 @@
+.targeta {
+  width: 180px;
+  height: 102px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  cursor: pointer;
+  text-align: left;
+  display: flex;
+ /* flex-direction: column;*/
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.actiuImatge {
+  filter: grayscale(80%);
+  opacity: 0.8;
+  transition: filter 0.3s ease;
+}
+
+
+.targeta:hover {
+  transform: scale(1.03);
+}
+
+.imatge {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nom {
+  margin-top: 8px;
+  font-weight: bold;
+}
+
+.grayscale {
+  filter: grayscale(100%);
+}
+
+.actiu {
+  width: 100%;
+  height: 100%;
+  background-color: #a97c50; /* marró */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.bloquejat {
+  width: 100%;
+  height: 100%;
+  background-color: #cccccc;
+}

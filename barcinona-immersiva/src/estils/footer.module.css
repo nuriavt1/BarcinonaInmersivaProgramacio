@@ -1,0 +1,14 @@
+.footer{
+    background-color: var(--color-brown200);
+    display: flex;
+    justify-content: space-around;
+     box-sizing: border-box;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}

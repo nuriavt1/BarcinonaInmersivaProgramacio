@@ -1,0 +1,98 @@
+[
+    {
+        "idVideo": 1,
+        "titol": "Cap 1 - Introducció",
+        "nivell": null,
+        "localització": "",
+        "ubicació": {
+            "lat": null,
+            "lng": null
+        },
+        "url": "https://youtu.be/8tSFTAlESa4",
+        "debloquejat": true,
+        "ubicacióDesbloquejada": true,
+        "imatgeCaratula": "cap1.png",
+        "targetesDesbloquejades": [
+            1,
+            11,
+            16,
+            18
+        ]
+    },
+    {
+        "idVideo": 2,
+        "titol": "Cap 2 - El cavaller",
+        "nivell": 2,
+        "localització": "Plaça del Rei",
+        "ubicació": {
+            "lat": 41.4112874,
+            "lng": 2.1738672
+        },
+        "url": "https://youtu.be/n8Lm_Cd8Qf0",
+        "debloquejat": false,
+        "ubicacióDesbloquejada": false,
+        "imatgeCaratula": "cap2.png",
+        "targetesDesbloquejades": [
+            2,
+            21
+        ]
+    },
+    {
+        "idVideo": 3,
+        "titol": "Cap 3 - La monja",
+        "nivell": 3,
+        "localització": "Catedral de bacelona",
+        "ubicació": {
+            "lat": 41.4112874,
+            "lng": 2.1738672
+        },
+        "url": "https://youtu.be/nYCTYGegOTc",
+        "debloquejat": false,
+        "ubicacióDesbloquejada": false,
+        "imatgeCaratula": "cap3.png",
+        "targetesDesbloquejades": [
+            4,
+            5,
+            6,
+            22
+        ]
+    },
+    {
+        "idVideo": 4,
+        "titol": "Cap 4 - El comerciant",
+        "nivell": 4,
+        "localització": "Plaça de Santa Maria",
+        "ubicació": {
+            "lat": 41.4112874,
+            "lng": 2.1738672
+        },
+        "url": "https://youtu.be/JphkOS1fpi4",
+        "debloquejat": false,
+        "ubicacióDesbloquejada": false,
+        "imatgeCaratula": "cap4.png",
+        "targetesDesbloquejades": [
+            8,
+            9,
+            14,
+            15,
+            23, 7
+        ]
+    },
+    {
+        "idVideo": 5,
+        "titol": "Cap 5 - Els jueus",
+        "nivell": 5,
+        "localització": "MUHBA El Call",
+        "ubicació": {
+            "lat": 41.4112874,
+            "lng": 2.1738672
+        },
+        "url": "https://youtu.be/T1mi54g8HdQ",
+        "debloquejat": false,
+        "ubicacióDesbloquejada": false,
+        "imatgeCaratula": "cap5.png",
+        "targetesDesbloquejades": [
+            25, 10, 12
+        ]
+    }
+]

@@ -1,0 +1,39 @@
+[
+    {
+        "nivell": 1,
+        "pregunta": "Observa bé els carrers que porten a la plaça. Un d’ells era per on els cent consellers entraven a la Casa de la Ciutat. Si camines per aquell carrer, veuràs la porta d’accés. Ja saps quin és?",
+        "resposta": "CARRERDELACIUTAT",
+        "targetesDesbloquejades": [
+            20
+        ],
+        "ubicació": "Plaça Sant Jaume"
+    },
+    {
+        "nivell": 2,
+        "pregunta": "Des de la plaça del Pi, observa bé la façana de l’església de Santa Maria del Pi. Entre les formes de pedra, hi ha pinyes amagades. Si mires amb atenció, les sabràs trobar. Quantes n’hi veus?",
+        "resposta": "2",
+        "targetesDesbloquejades": [
+            24
+        ],
+        "ubicació": "Plaça del Pi"
+    },
+        {
+        "nivell": 3,
+        "pregunta": "Resol el missatge Encriptat",
+        "resposta": "BLAT",
+        "targetesDesbloquejades": [
+            10
+            
+        ],
+        "ubicació": "Plaça de L'Àngel"
+    },
+            {
+        "nivell": 4,
+        "pregunta": "En un d’aquests carrers estava la Sinagoga Major. Observa, és molt fàcil, just en l’entrada veuràs el que queda de la mezuza. Sabries dir quin es el numero de la porta en la actualitat.",
+        "resposta": "5",
+        "targetesDesbloquejades": [
+            25
+        ],
+        "ubicació": "Carrer de Salomó Ben Adret"
+    }
+]

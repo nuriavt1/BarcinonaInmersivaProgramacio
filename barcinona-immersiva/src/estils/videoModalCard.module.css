@@ -1,0 +1,9 @@
+.imatge {
+  width: 100%;
+  border-radius: 8px;
+  transition: filter 0.4s ease;
+}
+
+.actiuImatge {
+  filter: grayscale(100%);
+}

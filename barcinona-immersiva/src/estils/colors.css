@@ -1,0 +1,54 @@
+:root {
+  /*RED*/
+  --color-red25: #FFFBFA;
+  --color-red50: #FFEFEB;
+  --color-red100: #FEDED7;
+  --color-red200: #FCB6A6;
+  --color-red300: #F5917A;
+  --color-red400: #EE6C4F;
+  --color-red500: #E74723;
+  --color-red600: #C33413;
+  --color-red700: #98250B;
+  --color-red800: #6D1703;
+  --color-red900: #3C0C01;
+
+
+  /*BLUE*/
+  --color-blue25: #FBFEFE;
+  --color-blue50: #EDFCFC;
+  --color-blue100: #ABF0F2;
+  --color-blue200: #7EE8EC;
+  --color-blue300: #52E0E5;
+  --color-blue400: #26D8DF;
+  --color-blue500: #08C1C8;
+  --color-blue600: #15858A;
+  --color-blue700: #0E5A5D;
+  --color-blue800: #093C3E;
+  --color-blue900: #052223;
+
+/*BROWN*/
+  --color-brown25: #FFFFFF;
+  --color-brown50: #F7F4F2;
+  --color-brown100: #ECE4DF;
+  --color-brown200: #D9CABF;
+  --color-brown300: #C6AF9F;
+  --color-brown400: #B39580;
+  --color-brown500: #9D7B62;
+  --color-brown600: #80624D;
+  --color-brown700: #604939;
+  --color-brown800: #403126;
+  --color-brown900: #201813;
+
+  /*NEUTRALS*/
+  --color-white: #FFFFFF;
+  --color-neutrals50: #EEEEF1;
+  --color-neutrals100: #D2D2DA;
+  --color-neutrals200: #B6B6C3;
+  --color-neutrals300: #9A9AAC;
+  --color-neutrals400: #7E7E95;
+  --color-neutrals500: #65657B;
+  --color-neutrals600: #4E4E5F;
+  --color-neutrals700: #373743;
+  --color-neutrals800: #202027;
+  --color-black: #000128;
+}
