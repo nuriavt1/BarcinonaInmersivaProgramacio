@@ -1,7 +1,7 @@
 [
     {
         "idVideo": 1,
-        "titol": "Cap 1 - Introducció",
+        "titol": "Introducció",
         "nivell": null,
         "localització": "",
         "ubicació": {
@@ -20,7 +20,7 @@
     },
     {
         "idVideo": 2,
-        "titol": "Cap 2 - El cavaller",
+        "titol": "El cavaller",
         "nivell": 2,
         "localització": "Plaça del Rei",
         "ubicació": {
@@ -38,7 +38,7 @@
     },
     {
         "idVideo": 3,
-        "titol": "Cap 3 - La monja",
+        "titol": "La monja",
         "nivell": 3,
         "localització": "Catedral de bacelona",
         "ubicació": {
@@ -58,7 +58,7 @@
     },
     {
         "idVideo": 4,
-        "titol": "Cap 4 - El comerciant",
+        "titol": "El comerciant",
         "nivell": 4,
         "localització": "Plaça de Santa Maria",
         "ubicació": {
@@ -72,14 +72,12 @@
         "targetesDesbloquejades": [
             8,
             9,
-            14,
-            15,
-            23, 7
+            14
         ]
     },
     {
         "idVideo": 5,
-        "titol": "Cap 5 - Els jueus",
+        "titol": "Els jueus",
         "nivell": 5,
         "localització": "MUHBA El Call",
         "ubicació": {

@@ -58,7 +58,7 @@
       "id": 7,
       "idCateg": 7,
       "nom": "Esclau",
-      "imatge": "4.svg",
+      "imatge": "esclaus.png",
       "categoria": "...",
       "contingut": "Barcelona era plena d’esclaus al segle XIV, un de cada deu habitants era esclau. Desde la Pesta Negra del 1348 va aparèixer molta oferta de treball i els propietaris no volien pujar el salari als treballadors, per això recorrien als esclaus.\nProvenien de tot arreu de la mediterrània. La venta d’aquests esclaus s’acostumava a efectuar en la Llotja. Majoritàriament eren esclaus i es fa una subhasta pública per adjudicar al millor postor.",
        "debloquejat": false
@@ -76,7 +76,7 @@
 {
   "id": 9,
   "idCateg": 9,
-  "imatge": "4.svg",
+  "imatge": "mostassaf.png",
   "nom": "Mostassaf",
   "categoria": "Comerç",
   "contingut": "El mostassaf és un càrrec municipal encarregat de vigilar els mercats i garantir que tot es vengui amb justícia. Controla els pesos i mesures, inspecciona els productes i s’assegura que els preus siguin raonables.\n\nTambé pot castigar els venedors que enganyen o no compleixen les normes. La seva feina és clau per mantenir l’ordre i la confiança al comerç de la ciutat.",
@@ -210,7 +210,7 @@
   "id": 23,
   "idCateg": 8,
   "nom": "Santa Maria del Mar",
-  "imatge": "4.svg",
+  "imatge": "Santa Maria.png",
   "categoria": "Clergat",
   "contingut": "Santa Maria del Mar va ser construïda amb pedres procedents de la muntanya de Montjuïc. Va ser dissenyada per Berenguer de Montagut i Ramon Despuig, però es diu que van ser els veïns humils del barri de la Ribera qui van ajudar a aixecar aquest gran temple gòtic.",
   "debloquejat": false
