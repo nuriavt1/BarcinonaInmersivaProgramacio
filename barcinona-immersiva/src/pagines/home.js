@@ -7,13 +7,13 @@ function Home(){
     return(
 <div className={style.body}>
    <div className={style.logoTitle}>
-<p className="headline1" style={{ margin: 0, padding:0, color: "var(--color-blue700)"}}>Barcelona</p>
-    <p className="headline3" style={{ margin: 0, padding:0, color: "var(--color-blue700)" }}>La ciutat medieval</p>
+<p className="headline1" style={{ margin: 0, padding:0, color: "var(--color-white)"}}>Barcelona</p>
+    <p className="headline3" style={{ margin: 0, padding:0, color: "var(--color-white)" }}>La ciutat medieval</p>
    </div >
    <div className={style.buttonsContainer}>
 <ButtonText onClick={() => navigate('/onBoarding')}>Començar</ButtonText>
 <ButtonText onClick={() => navigate('/onBoarding')}>Configuració</ButtonText>
-<ButtonText onClick={() => navigate('/onBoarding')}>Crèdits</ButtonText>
+<ButtonText onClick={() => navigate('/credits')}>Crèdits</ButtonText>
 </div>
 </div>
     );

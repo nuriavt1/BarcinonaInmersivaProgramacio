@@ -1,6 +1,7 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Home from './pagines/home'
+import Credits from './pagines/credits'
 import Mapa from './pagines/app/mapa'
 import OnBoarding from './pagines/onBoarding'
 import Video from './pagines/app/video'
@@ -38,6 +39,7 @@ function App() {
               <Route path="progressio" element={<Progressio />} ></Route>
               <Route path="nivells" element={<Nivells />} ></Route>
               <Route path="detalls" element={<Detalls />} ></Route>
+              <Route path="credits" element={<Credits />} ></Route>
             </Routes>
             <ModalGlobal></ModalGlobal>
               </UbicacioProvider>

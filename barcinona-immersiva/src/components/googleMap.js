@@ -1,121 +1,111 @@
 import React, { useEffect, useRef, useState } from 'react';
+import markersData from "../data/markersMapa.json";
+import { useNivell } from "../context/nivellContext";
 
 export default function GoogleMap() {
   const mapRef = useRef(null);
   const markerRef = useRef(null);
   const [mapa, setMapa] = useState(null);
   const [rotacio, setRotacio] = useState(0);
+  const { nivell } = useNivell();
 
   const API_KEY = 'AIzaSyDjd6_cWoVzsLayPAa9rZpOjd6jB9l2H1w';
 
   const loadScript = (url) => {
     return new Promise((resolve) => {
-      const existingScript = document.querySelector(`script[src="${url}"]`);
-      if (!existingScript) {
+      if (!document.querySelector(`script[src="${url}"]`)) {
         const script = document.createElement('script');
         script.src = url;
         script.async = true;
         script.defer = true;
-        document.body.appendChild(script);
         script.onload = () => resolve();
+        document.body.appendChild(script);
       } else {
         resolve();
       }
     });
   };
 
-useEffect(() => {
-  const handleOrientation = (event) => {
-    const alpha = event.alpha;
-    if (alpha !== null) {
-      setRotacio(alpha);
+  useEffect(() => {
+    const handleOrientation = (event) => {
+      if (event.alpha !== null) setRotacio(event.alpha);
+    };
+
+    if (
+      typeof DeviceOrientationEvent !== 'undefined' &&
+      typeof DeviceOrientationEvent.requestPermission === 'function'
+    ) {
+      DeviceOrientationEvent.requestPermission()
+        .then(response => {
+          if (response === 'granted') {
+            window.addEventListener("deviceorientationabsolute", handleOrientation, true);
+          }
+        })
+        .catch(console.error);
+    } else {
+      window.addEventListener("deviceorientationabsolute", handleOrientation, true);
     }
-  };
 
-  // 👇 Comprovem si cal demanar permís (iOS)
-  if (typeof DeviceOrientationEvent !== 'undefined' && typeof DeviceOrientationEvent.requestPermission === 'function') {
-    DeviceOrientationEvent.requestPermission()
-      .then((response) => {
-        if (response === 'granted') {
-          window.addEventListener("deviceorientationabsolute", handleOrientation, true);
-        } else {
-          console.warn("Permís per accedir a l'orientació denegat");
-        }
-      })
-      .catch(console.error);
-  } else {
-    // Altres dispositius que no necessiten permís
-    window.addEventListener("deviceorientationabsolute", handleOrientation, true);
-  }
-
-  return () => {
-    window.removeEventListener("deviceorientationabsolute", handleOrientation);
-  };
-}, []);
-
+    return () => {
+      window.removeEventListener("deviceorientationabsolute", handleOrientation);
+    };
+  }, []);
 
   useEffect(() => {
-    const getUbicacioGoogle = async () => {
-      try {
-        const res = await fetch(`https://www.googleapis.com/geolocation/v1/geolocate?key=${API_KEY}`, {
-          method: 'POST'
-        });
-
-        if (!res.ok) throw new Error("No s'ha pogut obtenir la ubicació");
-
-        const data = await res.json();
-        return {
-          lat: data.location.lat,
-          lng: data.location.lng
-        };
-      } catch (err) {
-        console.error("❌ Error amb la geolocalització de Google:", err);
-        return null;
-      }
-    };
-
     const initMap = async () => {
-      if (window.google) {
-        const ubicacioInicial = await getUbicacioGoogle();
-        const myLatLng = ubicacioInicial || { lat: 41.3839, lng: 2.1775 };
+      const url = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&libraries=places&v=beta`;
+      await loadScript(url);
+      if (!window.google) return;
 
-        const map = new window.google.maps.Map(mapRef.current, {
-          center: myLatLng,
-          zoom: 16,
-          mapId: '1575ba43ccf543cf',
-          disableDefaultUI: true,
+      const { AdvancedMarkerView } = await window.google.maps.importLibrary("marker");
+
+      const defaultLatLng = { lat: 41.3839, lng: 2.1775 };
+      const map = new window.google.maps.Map(mapRef.current, {
+        center: defaultLatLng,
+        zoom: 16,
+        mapId: '1575ba43ccf543cf',
+        disableDefaultUI: true,
+      });
+
+      setMapa(map);
+
+      // 🔵 Marcador de l’usuari
+      const markerDiv = document.createElement("div");
+      markerDiv.style.width = "40px";
+      markerDiv.style.height = "40px";
+      markerDiv.innerHTML = `
+        <div style="width: 40px; height: 40px; transform: rotate(${rotacio}deg);">
+          <img src="/imatgesMaps/PositionMarker.svg" style="width: 100%; height: 100%;" />
+        </div>
+      `;
+      markerRef.current = new AdvancedMarkerView({
+        map,
+        position: defaultLatLng,
+        content: markerDiv,
+      });
+
+      // 📍 Marcadors filtrats pel nivell actual
+      markersData
+        .filter(marker => marker.cap === nivell)
+        .forEach(marker => {
+          const markerElement = document.createElement("div");
+          markerElement.style.width = "36px";
+          markerElement.style.height = "36px";
+          const imgSrc = marker.nom.toLowerCase().includes("plaça") ? "enigmaMarker.svg" : "videoMarker.svg";
+          markerElement.innerHTML = `
+            <img src="/imatgesMaps/${imgSrc}" style="width: 100%; height: 100%;" />
+          `;
+          new AdvancedMarkerView({
+            map,
+            position: { lat: marker.lat, lng: marker.lng },
+            title: marker.nom,
+            content: markerElement,
+          });
         });
-
-        setMapa(map);
-
-        const { AdvancedMarkerView } = await window.google.maps.importLibrary("marker");
-        if (!AdvancedMarkerView) {
-          console.error("❌ No s'ha pogut carregar AdvancedMarkerView");
-          return;
-        }
-
-        const markerDiv = document.createElement("div");
-        markerDiv.style.width = "40px";
-        markerDiv.style.height = "40px";
-        markerDiv.innerHTML = `
-          <div style="width: 40px; height: 40px; transform: rotate(${rotacio}deg);">
-            <img src="/imatgesMaps/PositionMarker.svg" style="width: 100%; height: 100%;" />
-          </div>
-        `;
-
-        const marker = new AdvancedMarkerView({
-          map,
-          position: myLatLng,
-          content: markerDiv,
-        });
-
-        markerRef.current = marker;
-      }
     };
 
-    const url = `https://maps.googleapis.com/maps/api/js?key=${API_KEY}&libraries=places&v=beta`;
-    loadScript(url).then(initMap);
-  }, []);
+    initMap();
+  }, [nivell]);
 
   useEffect(() => {
     if (markerRef.current) {

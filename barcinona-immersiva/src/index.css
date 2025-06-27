@@ -20,9 +20,9 @@ code {
 @media (min-width: 1024px) {
   body {
     display: flex;
-    justify-content: center;
+   /* justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100vh;*/
     margin: 0;
     background-color: white;
   }

@@ -6,7 +6,8 @@
         "lat": 41.38279,
         "lng": 2.17724,
         "direccio": "Pl. de Sant Jaume, Ciutat Vella, 08002 Barcelona",
-        "foto": "#"
+        "foto": "#",
+        "tipus": "enigma"
     },
     {
         "id": 2,
@@ -15,7 +16,8 @@
         "lat": 41.38422,
         "lng": 2.17727,
         "direccio": "Pl. del Rei, Ciutat Vella, 08002 Barcelona",
-        "foto": "#"
+        "foto": "#",
+        "tipus": "video"
     },
     {
         "id": 3,
@@ -24,7 +26,8 @@
         "lat": 41.38224,
         "lng": 2.17391,
         "direccio": "Plaça del Pi, 7, Ciutat Vella, 08002 Barcelona",
-        "foto": "#"
+        "foto": "#",
+        "tipus": "enigma"
     },
         {
         "id": 4,
@@ -33,60 +36,48 @@
         "lat": 41.38397,
         "lng": 2.17632,
         "direccio": "Pla de la Seu, s/n, Ciutat Vella, 08002 Barcelona",
-        "foto": "#"
+        "foto": "#",
+        "tipus": "video"
     },
-            {
+      
+                    {
         "id": 5,
         "cap": 3,
-        "nom": "Font de la Portaferrissa",
-        "lat": 41.38303,
-        "lng": 2.1719,
-        "direccio": "Carrer de la Portaferrissa, 2, Ciutat Vella, 08002 Barcelona",
-        "foto": "#"
-    },
-                {
-        "id": 6,
-        "cap": 3,
-        "nom": "Antic hospital de la Santa Creu de Barcelona",
-        "lat": 41.38079,
-        "lng": 2.17007,
-        "direccio": "Carrer de l'Hospital, 56, Ciutat Vella, 08001 Barcelona",
-        "foto": "#"
-    },
-                    {
-        "id": 6,
-        "cap": 4,
         "nom": "Plaça de l'Àngel",
         "lat": 41.38388996010468,
         "lng": 2.1786125820334616,
         "direccio": "Plaça de l'Àngel, Ciutat Vella, Barcelona",
-        "foto": "#"
+        "foto": "#",
+        "tipus": "enigma"
     },
                         {
         "id": 6,
-        "cap": 4,
+        "cap": 3,
         "nom": "Santa Maria del Mar",
         "lat": 41.3839,
         "lng": 2.18207,
         "direccio": "Placeta de Montcada, Ciutat Vella, 08003 Barcelona",
-        "foto": "#"
+        "foto": "#",
+        "tipus": "video"
     },
                            {
         "id": 7,
-        "cap": 5,
+        "cap": 4,
         "nom": "Carrer de Salomó ben Adret",
         "lat": 41.38262,
         "lng": 2.17591,
         "direccio": "Carrer de Salomó ben Adret, Ciutat Vella, 08002 Barcelona",
-        "foto": "#"
+        "foto": "#",
+        "tipus": "enigma"
     },
                                {
-        "id": 8,
+        "id": 4,
         "cap": 5,
         "nom": "MUHBA El Call",
         "lat": 41.38256,
         "lng": 2.17536,
         "direccio": "Placeta de Manuel Ribé, 3, Ciutat Vella, 08002 Barcelona",
-        "foto": "#"
+        "foto": "#",
+        "tipus": "video"
     }
 ]
