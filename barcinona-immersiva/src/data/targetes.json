@@ -40,7 +40,7 @@
   "id": 5,
   "idCateg": 5,
   "nom": "Dona",
-  "imatge": "4.svg",
+  "imatge": "dona.png",
   "categoria": "Vida quotidiana",
   "contingut": "Les dones assumeixen principalment els rols d'esposa i mare, mentre que els homes prenen altres responsabilitats dins la societat.\n\nLes noies es casen joves, entre els dotze i els vint anys. Fins a aquesta edat són considerades nenes, després donzelles, i només deixen de ser-ho en casar-se. No està ben vist que una dona es busqui marit, mentre que els homes tenen més llibertat per escollir i solen casar-se més grans.\n\nLa majoria de dones es casen amb l’home que els han triat els seus pares, però algunes intenten escapar d’un matrimoni no desitjat entrant en religió o casant-se en secret. Els matrimonis clandestins poden comportar càstigs greus, com el desheretament o l’exili.\n\nHi ha la creença estesa que l’home sap més que la dona, ja que només ells tenen accés a l’educació, considerada imprescindible per tenir coneixement.\n\nMoltes dones filen en els seus moments lliures. A totes les cases hi ha filoses, debanadores i materials per treballar la llana. Teixeixen per al consum propi, però de vegades també venen el que han produït a la plaça de la Llana.",
   "debloquejat": false
@@ -66,10 +66,10 @@
 {
   "id": 8,
   "idCateg": 8,
-  "nom": "Mercader",
-  "imatge": "4.svg",
+  "nom": "Comerciant",
+  "imatge": "Comerciant.png",
   "categoria": "Comerç",
-  "contingut": "El mercader és un personatge clau a la Barcelona del segle XIV. Viatja sovint per mar o per terra, portant productes com teixits, espècies, metalls o ceràmica. Fa negocis amb altres ciutats del Mediterrani i coneix idiomes, monedes i costums diversos.\n\nAlguns mercaders són rics i poderosos, amb botigues pròpies i connexions amb el Consell de Cent. Altres, més modestos, venen a peu de carrer o en petites parades als mercats de la ciutat.",
+  "contingut": "El comerciant és un personatge clau a la Barcelona del segle XIV. Viatja sovint per mar o per terra, portant productes com teixits, espècies, metalls o ceràmica. Fa negocis amb altres ciutats del Mediterrani i coneix idiomes, monedes i costums diversos.\n\nAlguns mercaders són rics i poderosos, amb botigues pròpies i connexions amb el Consell de Cent. Altres, més modestos, venen a peu de carrer o en petites parades als mercats de la ciutat.",
   "debloquejat": false
 },
 
@@ -87,7 +87,7 @@
       "id": 10,
       "idCateg": 10,
       "nom": "Jueu",
-      "imatge": "4.svg",
+      "imatge": "jueus.png",
       "categoria": "Jueus",
       "contingut": "La comunitat jueva de Barcelona va ser la més important de tota la corona aragonesa. Diuen fins hi tot que són ells els inventors de la escudella catalana…\nTenen terres a Montjuïc, Pedralbes o Sarrià. A Barcelona viuen agrupats dins de Call.\nEls jueus són fàcils d’identificar desde que l'església els va obligar a vestirse de forma diferenciada. Els homes, una capa amb caputxa i una rodeja groga o vermella, les dones al cap. També els va obligar a viure agrupats.\n\nSón els tresors del rei perquè són una font d’ingressos. Només el rei els pot jutjar. Són coneguts per ser prestamistes, a diferencia dels cristians que se'ls és prohibit fer prestams.\n\nMentre que per als cristians la educació no era obligatoria, els jueus estaven obligats a anar a l’escola i aprendre del Torah i el Talmud, i dominen l’art de l’escriptura i el préstec, l’estudi de la medicina i la astronomia.",
        "debloquejat": false
@@ -108,7 +108,7 @@
   "id": 12,
   "idCateg": 2,
   "nom": "Pogrom Jueu (1391)",
-  "imatge": "4.svg",
+  "imatge": "pogrom.png",
   "categoria": "Jueus",
   "contingut": "L’incident més greu a la Barcelona del segle XIV va ser el pogrom contra la comunitat jueva. L’any 1391 van esclatar diversos motins contra els calls (barris jueus) a diferents punts de la península Ibèrica, començant a Sevilla i estenent-se fins a Barcelona.\n\nA Barcelona, els fets comencen el 5 d’agost, després d’intents previs. Una multitud formada per mariners castellans de naus ancorades a la platja, juntament amb gent d'altres vaixells i del barri de la Ribera, es va mobilitzar. Alguns dels implicats van ser empresonats, però el 7 d’agost els disturbis van continuar.\n\nMariners i pescadors armats amb ballestes van recórrer el carrer del Mar fins a la plaça del Blat. Van assaltar la presó per alliberar els castellans empresonats dos dies abans. Després, es van dirigir cap a Castell Nou, on molts jueus s’havien refugiat. Allà van incendiar les portes i des dels terrats s'hi van llançar fletxes amb ballestes.\n\nMés tard, s’hi van afegir pagesos, que van entrar a l’escribania del batlle i van cremar els llibres oficials. L’endemà, els jueus refugiats a Castell Nou van ser obligats a convertir-se al cristianisme sota amenaça de mort.",
   "debloquejat": false
