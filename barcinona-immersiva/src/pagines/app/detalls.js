@@ -17,7 +17,7 @@ function Detalls() {
 
             <img
                 className={styles.imatge}
-                src={`imatgesTargetes/${targeta.imatge}`}
+                src={`imatgesDetall/${targeta.imatgedetall}`}
                 alt={targeta.nom}
             />
                <ButtonRetorn  className={styles.buttonReturn}/>

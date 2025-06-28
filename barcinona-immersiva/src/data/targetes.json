@@ -6,7 +6,8 @@
       "imatge": "metge.png",
       "categoria": "General",
       "contingut": "A la ciutat, els metges oficials formen part del colledium medicorum, un grup selecte i respectat. Per arribar-hi, cal estudiar durant anys i superar exàmens rigorosos. Molts dels que ho aconsegueixen han estudiat a la universitat de Lleida, vinculada amb la prestigiosa universitat de Montpellier, la més reconeguda de tota la cristiandat.\nNomés uns pocs poden llicenciar-se com a metges. Els estudis són molt cars, i per això sovint només les famílies benestants poden permetre-s’ho. Els metges llicenciats són una autoritat: poden diagnosticar, prescriure i rebre pacients d’alt estatus.\nPerò no són els únics que curen. A la ciutat també hi ha sanadors, barbers i altres ajudants que practiquen la medicina per lliure, sense formació oficial. Els barbers, per exemple, realitzen pràctiques quirúrgiques com sagnar, treure queixals o cosir ferides. Molts tenen gran habilitat, però no el reconeixement dels metges formats.",
-      "debloquejat": true
+      "debloquejat": true,
+      "imatgedetall": "metgedetall.png"
     },
 {
   "id": 2,
@@ -15,7 +16,8 @@
   "imatge": "cavaller.png",
   "categoria": "Noblesa",
   "contingut": "El cavaller és la figura militar per excel·lència de l’edat mitjana. Pertany a la noblesa i està vinculat a l’honor, la guerra i la defensa dels valors cristians.\n\nPer convertir-se en cavaller, un jove noble ha de seguir un llarg procés de formació. Primer, viu en una altra llar noble com a patge, on aprèn bones maneres, religió i el comportament propi entre cavallers i dames. Més endavant, es converteix en escuder i comença l'entrenament físic i militar, supervisat sovint pel seu padrí o un cavaller experimentat.\n\nQuan ha demostrat prou destresa, se celebra la cerimònia d’investidura, on rep l’espasa i l’armadura i fa el jurament de fidelitat. A partir d’aleshores és reconegut com a cavaller i pot participar en batalles i torneigs.",
-  "debloquejat": true
+  "debloquejat": true,
+   "imatgedetall": "peredetall.png"
 },
 
     {
@@ -24,7 +26,8 @@
       "nom": "Pagès",
       "imatge": "4.svg",
       "categoria": "Pagesia",
-       "debloquejat": false
+       "debloquejat": false,
+        "imatgedetall": "peredetall.png"
     },
 {
   "id": 26,
@@ -33,7 +36,8 @@
   "imatge": "monja.png",
   "categoria": "Clergat",
   "contingut": "Les monges de Sant Pere de les Puel·les viuen en clausura dins del monestir, al cor de Barcelona. Han fet vot de pobresa, castedat i obediència, i dediquen els seus dies a la pregària, la lectura i les tasques domèstiques.\n\nAlgunes provenen de famílies nobles o benestants, i hi han entrat per decisió pròpia o per voluntat dels pares. La vida dins del monestir és estricta: segueixen el ritme de les hores canòniques, mengen amb austeritat i tenen poques possessions.\n\nTot i viure apartades del món, les monges també fan una funció social: copien llibres, cusen vestits litúrgics, preparen remeis i acullen dones que fugen de matrimonis forçats o busquen refugi.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "monjadetall.png"
 },
 
 {
@@ -43,7 +47,8 @@
   "imatge": "dona.png",
   "categoria": "Vida quotidiana",
   "contingut": "Les dones assumeixen principalment els rols d'esposa i mare, mentre que els homes prenen altres responsabilitats dins la societat.\n\nLes noies es casen joves, entre els dotze i els vint anys. Fins a aquesta edat són considerades nenes, després donzelles, i només deixen de ser-ho en casar-se. No està ben vist que una dona es busqui marit, mentre que els homes tenen més llibertat per escollir i solen casar-se més grans.\n\nLa majoria de dones es casen amb l’home que els han triat els seus pares, però algunes intenten escapar d’un matrimoni no desitjat entrant en religió o casant-se en secret. Els matrimonis clandestins poden comportar càstigs greus, com el desheretament o l’exili.\n\nHi ha la creença estesa que l’home sap més que la dona, ja que només ells tenen accés a l’educació, considerada imprescindible per tenir coneixement.\n\nMoltes dones filen en els seus moments lliures. A totes les cases hi ha filoses, debanadores i materials per treballar la llana. Teixeixen per al consum propi, però de vegades també venen el que han produït a la plaça de la Llana.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "donadetall.png"
 },
 
     {
@@ -52,7 +57,8 @@
       "nom": "Nens",
       "imatge": "4.svg",
       "categoria": "...",
-       "debloquejat": false
+       "debloquejat": false,
+        "imatgedetall": ""
     },
     {
       "id": 7,
@@ -61,7 +67,8 @@
       "imatge": "esclaus.png",
       "categoria": "...",
       "contingut": "Barcelona era plena d’esclaus al segle XIV, un de cada deu habitants era esclau. Desde la Pesta Negra del 1348 va aparèixer molta oferta de treball i els propietaris no volien pujar el salari als treballadors, per això recorrien als esclaus.\nProvenien de tot arreu de la mediterrània. La venta d’aquests esclaus s’acostumava a efectuar en la Llotja. Majoritàriament eren esclaus i es fa una subhasta pública per adjudicar al millor postor.",
-       "debloquejat": false
+       "debloquejat": false,
+        "imatgedetall": "esclausdetall.png"
     },
 {
   "id": 8,
@@ -70,7 +77,8 @@
   "imatge": "Comerciant.png",
   "categoria": "Comerç",
   "contingut": "El comerciant és un personatge clau a la Barcelona del segle XIV. Viatja sovint per mar o per terra, portant productes com teixits, espècies, metalls o ceràmica. Fa negocis amb altres ciutats del Mediterrani i coneix idiomes, monedes i costums diversos.\n\nAlguns mercaders són rics i poderosos, amb botigues pròpies i connexions amb el Consell de Cent. Altres, més modestos, venen a peu de carrer o en petites parades als mercats de la ciutat.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "comerciantdetall.png"
 },
 
 {
@@ -80,7 +88,8 @@
   "nom": "Mostassaf",
   "categoria": "Comerç",
   "contingut": "El mostassaf és un càrrec municipal encarregat de vigilar els mercats i garantir que tot es vengui amb justícia. Controla els pesos i mesures, inspecciona els productes i s’assegura que els preus siguin raonables.\n\nTambé pot castigar els venedors que enganyen o no compleixen les normes. La seva feina és clau per mantenir l’ordre i la confiança al comerç de la ciutat.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "mostassafdetall.png"
 },
 
     {
@@ -90,7 +99,8 @@
       "imatge": "jueus.png",
       "categoria": "Jueus",
       "contingut": "La comunitat jueva de Barcelona va ser la més important de tota la corona aragonesa. Diuen fins hi tot que són ells els inventors de la escudella catalana…\nTenen terres a Montjuïc, Pedralbes o Sarrià. A Barcelona viuen agrupats dins de Call.\nEls jueus són fàcils d’identificar desde que l'església els va obligar a vestirse de forma diferenciada. Els homes, una capa amb caputxa i una rodeja groga o vermella, les dones al cap. També els va obligar a viure agrupats.\n\nSón els tresors del rei perquè són una font d’ingressos. Només el rei els pot jutjar. Són coneguts per ser prestamistes, a diferencia dels cristians que se'ls és prohibit fer prestams.\n\nMentre que per als cristians la educació no era obligatoria, els jueus estaven obligats a anar a l’escola i aprendre del Torah i el Talmud, i dominen l’art de l’escriptura i el préstec, l’estudi de la medicina i la astronomia.",
-       "debloquejat": false
+       "debloquejat": false,
+        "imatgedetall": "jueusdetall.png"
     }
   ],
   "conceptes": [
@@ -101,7 +111,8 @@
   "imatge": "pestanegra.png",
   "categoria": "General",
   "contingut": "La Pesta Negra va arribar a Catalunya l’any 1348 i va arrasar el territori, provocant la mort del 60 al 70 % de la població. Molts creien que era la fi del món, un càstig pels pecats o una conseqüència dels pous enverinats pels jueus. És una de les malalties més temudes.\n\nLa malaltia comença amb una úlcera o un bony, sovint sota l’engonal o l’aixella, i la víctima era ràpidament abandonada, fins i tot pels propis familiars. Era tan contagiosa i mortal que el millor remei era fugir, ràpid i lluny.\n\nHi va haver diversos brots al llarg dels segles.\n\nEls metges no sabíen curar-la. L’únic que podien era és intentar prevenir-la amb dietes, remeis farmacològics o antídots. Tot i això, la majoria de tractaments eren inútils. Només se sabia que la malaltia es transmetia per l’aire o pel contacte amb objectes contaminats, i que s’havia de purificar amb el foc en espais oberts i amb perfums en espais tancats.\n\nSempre presenta els mateixos símptomes i matava entre les vint-i-quatre hores i els cinc dies després de l’aparició dels primers signes. Molt pocs aconseguien sobreviure.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "pestadetall.png"
 }
 ,
    {
@@ -111,7 +122,8 @@
   "imatge": "pogrom.png",
   "categoria": "Jueus",
   "contingut": "L’incident més greu a la Barcelona del segle XIV va ser el pogrom contra la comunitat jueva. L’any 1391 van esclatar diversos motins contra els calls (barris jueus) a diferents punts de la península Ibèrica, començant a Sevilla i estenent-se fins a Barcelona.\n\nA Barcelona, els fets comencen el 5 d’agost, després d’intents previs. Una multitud formada per mariners castellans de naus ancorades a la platja, juntament amb gent d'altres vaixells i del barri de la Ribera, es va mobilitzar. Alguns dels implicats van ser empresonats, però el 7 d’agost els disturbis van continuar.\n\nMariners i pescadors armats amb ballestes van recórrer el carrer del Mar fins a la plaça del Blat. Van assaltar la presó per alliberar els castellans empresonats dos dies abans. Després, es van dirigir cap a Castell Nou, on molts jueus s’havien refugiat. Allà van incendiar les portes i des dels terrats s'hi van llançar fletxes amb ballestes.\n\nMés tard, s’hi van afegir pagesos, que van entrar a l’escribania del batlle i van cremar els llibres oficials. L’endemà, els jueus refugiats a Castell Nou van ser obligats a convertir-se al cristianisme sota amenaça de mort.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "pogromdetall.png"
 },
 
     {"id": 13,
@@ -119,7 +131,8 @@
       "nom": "Vassallatge",
       "imatge": "4.svg",
       "categoria": "Pagesia",
-       "debloquejat": false
+       "debloquejat": false,
+        "imatgedetall": "pogromdetall.png"
     },
 {
   "id": 14,
@@ -128,7 +141,8 @@
   "imatge": "4.svg",
   "categoria": "Comerç",
   "contingut": "Una cofraria és una associació de treballadors d’un mateix ofici. Els seus membres es protegeixen mútuament, comparteixen eines, es formen i s’ajuden si tenen problemes econòmics o familiars.\n\nTambé tenen funcions religioses i solidàries: organitzen misses, processons i funerals pels seus membres. Algunes cofraries són molt influents i tenen privilegis, estatuts propis i fins i tot espais on es reuneixen. N’hi ha de forners, teixidors, ferrers, carnissers i molts altres oficis.\n\nEntrar en una cofraria és una manera d’obtenir reconeixement, protecció i sentir-se part d’un col·lectiu dins la ciutat medieval.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "pogromdetall.png"
 },
 
 {
@@ -138,7 +152,8 @@
   "imatge": "4.svg",
   "categoria": "Comerç",
   "contingut": "El Consell de Cent era una assemblea de consellers amb representació de les tres mans (estaments socials) i un executiu format per un nombre reduït de magistrats, anomenats jurats, regidors o cònsols. A Barcelona, el Consell de Cent Prohoms s’elegia cada any i escollia, entre el patriciat, cinc consellers que recapten impostos per al comú i per al rei, i que, d'acord amb el batlle, regulaven les activitats dels oficis, el comerç i el proveïment.\n\nTenia competències en qüestions d’ordre públic, justícia, sanitat, obres públiques, caritat, preus i mesures.\n\nEl Consell de Cent va ser creat el 1249 i es reunia al Saló de Cent, que actualment forma part de l’Ajuntament de Barcelona.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "pogromdetall.png"
 }
 
   ],
@@ -149,14 +164,16 @@
       "nom": "Apoteca",
       "imatge": "4.svg",
       "categoria": "General",
-       "debloquejat": false
+       "debloquejat": false,
+        "imatgedetall": "pogromdetall.png"
     },
     {"id": 17,
       "idCateg": 2,
       "nom": "El Raval",
       "imatge": "4.svg",
       "categoria": "Pagesia",
-       "debloquejat": false
+       "debloquejat": false,
+        "imatgedetall": "pogromdetall.png"
     },
   {
   "id": 18,
@@ -165,7 +182,8 @@
   "imatge": "Barcelona.png",
   "categoria": "General",
   "contingut": "Al segle XIV, Barcelona és una ciutat en creixement, però no tothom que hi viu és considerat ciutadà. En queden exclosos les dones, els jornalers, els aprenents, els servents, els pobres i fins i tot alguns privilegiats.\n\nLa ciutat medieval s’anomena sovint Barcinona i es distribueix en tres grans zones. Al centre hi ha la zona emmurallada de l’antiga Barcino, el que avui coneixem com el Barri Gòtic, on es conserven vestigis romans i es troben els edificis més importants com el Palau Reial, residència del rei, i les cases de la noblesa.\n\nCap a l’est s’estén el barri de la Ribera, conegut com el barri dels pescadors. És una zona plena de vida, comerç i activitat marítima, on s’alça Santa Maria del Mar, construïda amb l’esforç del poble.\n\nCap a l’oest, neix el Raval, una zona més rural amb camps de conreu i convents, menys densament poblada. Aquí, al segle XV, s’hi fundarà l’Hospital de la Santa Creu.\n\nEntre muralles, places, mercats i gremis, Barcelona es transforma en una ciutat activa, desigual i vibrant, on conviuen el poder reial, les classes treballadores i les comunitats com la jueva o la religiosa.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "barcelonadetall.png"
 },
 
 {
@@ -175,7 +193,8 @@
   "imatge": "4.svg",
   "categoria": "Espais públics",
   "contingut": "El mercat de segona mà de la Plaça Sant Jaume és un dels llocs més importants per a la gent del carrer. Per a la gent humil i treballadora de la ciutat, comprar roba, mobles i eines noves és gairebé impossible, i es veuen obligats a adquirir productes utilitzats, de vegades trencats o esquinçats.\n\nEl mercat s’anuncia amb el so de les trompetes. Els objectes es col·loquen a la vista i un corredor, enfilat a l’olm del mig de la plaça, crida i exalça els articles que es subhasten. Aquests es venen al millor postor. Per això, se’l coneix com el mercat dels Encants.\n\nAl mig de la plaça s’alça un olm. A vegades, algunes persones que havien desobeït les lleis sumptuàries (lleis sobre com s’havia de vestir) havien de passar-hi tot un dia lligades, només amb roba interior, com a càstig exemplar.\n\nTambé a la plaça s’hi troba l’església dedicada a Sant Jaume, i des d’aquí es podia accedir al Call jueu, el barri de la comunitat jueva. En aquest entorn també hi havia escrivanies, on notaris i escrivents redactaven documents oficials i testaments.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "pogromdetall.png"
 },
 
     {
@@ -184,7 +203,8 @@
       "nom": "Casa de la Ciutat",
       "imatge": "4.svg",
       "categoria": "Comerç",
-       "debloquejat": false
+       "debloquejat": false,
+        "imatgedetall": "pogromdetall.png"
     },
 {
   "id": 21,
@@ -193,7 +213,8 @@
   "imatge": "plaçadelrei.png",
   "categoria": "Noblesa",
   "contingut": "A la Plaça del Rei, al segle XIV, se celebraven torneigs i altres actes solemnes. Aquí es troba el Palau Major, residència dels comtes de Barcelona i reis de la Corona d’Aragó. També hi ha el Saló del Tinell, que feia de sala de cerimònies i de reunió per als escrivans de l’època, i la capella de Santa Àgata. Al seu costat, hi havia la petita casa del botxí, que vivia i treballava a la mateixa plaça.\n\nEn aquest espai s’hi celebraven actes oficials com la proclamació del nou veguer. Tot i el seu caràcter noble i institucional, la plaça també tenia una aparença de mercat. Al segle XIV encara s’hi venia palla al pati del Palau Major, conegut com el Corral.\n\nTot i les contínues prohibicions documentades entre 1302 i 1350, es venia farina, hi havia obradors i botigues adossades als murs del palau i fins i tot un escorxador als peus de les torres, al costat de la residència del veguer del rei.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "reidetall.png"
 },
 
 {
@@ -203,7 +224,8 @@
   "imatge": "4.svg",
   "categoria": "Clergat",
   "contingut": "La Catedral de Barcelona és un dels edificis més antics que es conserven a la ciutat. Les obres van començar l’any 1298 i es van allargar durant diversos segles.\n\nUn dels seus elements més curiosos es troba al claustre, on hi viuen tretze oques blanques. Aquestes simbolitzen els tretze anys que tenia Santa Eulàlia, patrona de la ciutat, quan va morir com a màrtir.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "catedraldetall.png"
 },
 
 {
@@ -213,7 +235,8 @@
   "imatge": "Santa Maria.png",
   "categoria": "Clergat",
   "contingut": "Santa Maria del Mar va ser construïda amb pedres procedents de la muntanya de Montjuïc. Va ser dissenyada per Berenguer de Montagut i Ramon Despuig, però es diu que van ser els veïns humils del barri de la Ribera qui van ajudar a aixecar aquest gran temple gòtic.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "santamariadetall.png"
 },
 
 {
@@ -223,7 +246,8 @@
   "imatge": "4.svg",
   "categoria": "Clergat",
   "contingut": "Santa Maria del Pi és una església gòtica situada al cor del barri del Pi, construïda al segle XIV. Està dedicada a la Mare de Déu i rep el nom d’un gran pi que antigament creixia a la plaça del davant.\n\nEl temple és conegut per la seva gran rosassa i l’amplitud de la nau única, típica del gòtic català. Era una església popular, freqüentada per menestrals, comerciants i veïns del barri. A l’exterior, s’hi feien mercats i trobades gremials.\n\nTot i les seves dimensions imponents, Santa Maria del Pi no era una església noble com la catedral, sinó una parròquia propera al poble i al batec quotidià de la ciutat.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "pogromdetall.png"
 },
 
     
@@ -232,7 +256,9 @@
       "nom": "La plaça del Blat",
       "imatge": "4.svg",
       "categoria": "Comerç",
-      "contingut": "Actualment trepitges la Plaça de l’Àngel i segurament només veus una boca de metro. Però si mires bé... sota els teus peus hi ha segles d’història. Muralles, forns, crits, justícia… i fam.\n\nA la plaça del Blat es trobava el gran mercat del blat i dels cereals. Els habitants van a recollir el Blat, a casa fan farina, barregen amb aigua, amasen i van a un forn per fer el pa.\nEra tan important que marcava el centre exacte de la ciutat: una pedra al terra indicava els límits dels quatre barris que dividien Barcelona.\n\nLa plaça creixia a mida que ho feia la ciutat. L’any 1351 van començar a enderrocar cases, murs i arcades per fer més espai. Allà on abans hi havia un forn, van construir una font o safareig amb brocs d’aigua.\n\nTambé era un lloc de conflictes i revoltes. Durant el “Mal any primer”, la falta de blat va fer esclatar el descontentament del poble.\nAprofitant una porta de la muralla romana, aquí s’hi trobava la Cort del Veguer: jutjat i presó alhora. L’any 1343 van fer reformes per millorar-la: hi van posar una campana que sonava quan es feia fosc. El poble la coneixia com el “seny del lladre”.\nPerò les obres no van canviar gran cosa: la presó seguia sent un forat humit, brut i pudent. Els presos només tenien un petit finestral amb reixa per veure el carrer… si el carceller ho permetia."
+      "contingut": "Actualment trepitges la Plaça de l’Àngel i segurament només veus una boca de metro. Però si mires bé... sota els teus peus hi ha segles d’història. Muralles, forns, crits, justícia… i fam.\n\nA la plaça del Blat es trobava el gran mercat del blat i dels cereals. Els habitants van a recollir el Blat, a casa fan farina, barregen amb aigua, amasen i van a un forn per fer el pa.\nEra tan important que marcava el centre exacte de la ciutat: una pedra al terra indicava els límits dels quatre barris que dividien Barcelona.\n\nLa plaça creixia a mida que ho feia la ciutat. L’any 1351 van començar a enderrocar cases, murs i arcades per fer més espai. Allà on abans hi havia un forn, van construir una font o safareig amb brocs d’aigua.\n\nTambé era un lloc de conflictes i revoltes. Durant el “Mal any primer”, la falta de blat va fer esclatar el descontentament del poble.\nAprofitant una porta de la muralla romana, aquí s’hi trobava la Cort del Veguer: jutjat i presó alhora. L’any 1343 van fer reformes per millorar-la: hi van posar una campana que sonava quan es feia fosc. El poble la coneixia com el “seny del lladre”.\nPerò les obres no van canviar gran cosa: la presó seguia sent un forat humit, brut i pudent. Els presos només tenien un petit finestral amb reixa per veure el carrer… si el carceller ho permetia.",
+      "debloquejat": false,
+      "imatgedetall": "pogromdetall.png"
     },
 {
   "id": 25,
@@ -241,7 +267,8 @@
   "imatge": "4.svg",
   "categoria": "Jueus",
   "contingut": "El Call Jueu és un barri estret i ple de vida. És on viuen els jueus de la ciutat.\n\nLes cases estan construïdes paret amb paret, formant gairebé una muralla. Durant el dia, els portals romanen oberts, però quan cau la nit es tanquen per por que alguns cristians, beguts o enrabiats, hi entrin amb males intencions.",
-  "debloquejat": false
+  "debloquejat": false,
+   "imatgedetall": "pogromdetall.png"
 },
 
     {
@@ -250,7 +277,8 @@
       "nom": "La Muralla",
       "imatge": "4.svg",
       "categoria": "General",
-       "debloquejat": false
+       "debloquejat": false,
+       "imatgedetall": "pogromdetall.png"
     }
   ]
 }
