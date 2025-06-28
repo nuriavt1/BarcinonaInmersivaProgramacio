@@ -9,14 +9,13 @@ import { useNivell } from "../../context/nivellContext";
 import ModalResposta from "../modals/modalResposta";
 import ModalDesbloqueigTargetes from "../modals/modalDesbloqueigTargetes";
 
-export default function Nivell3() {
+export default function Nivell3({ resolta, marcaResolta }) {
   const paraula = ["B", "L", "A", "T"];
   const totalLletres = paraula.length;
 
-  const endevinalla = endevinalles.find((e) => e.nivell === 3); // ✅ correcte
+  const endevinalla = endevinalles.find((e) => e.nivell === 3);
   const { desbloquejaVideo } = useVideos();
   const { desbloquejaTargeta, getTargetaPerId, targetes } = useTargetes();
-  const { nivell, setNivell } = useNivell();
 
   const [letters, setLetters] = useState(Array(totalLletres).fill(""));
   const [letterStates, setLetterStates] = useState(Array(totalLletres).fill(null));
@@ -59,7 +58,7 @@ export default function Nivell3() {
     const esCorrecte = novaComparacio.every(Boolean);
 
     if (esCorrecte) {
-      desbloquejaVideo(4); // ✅ vídeo associat al nivell 3
+      desbloquejaVideo(4); // id correcte del vídeo
       endevinalla.targetesDesbloquejades.forEach((id) => desbloquejaTargeta(id));
 
       const novesTargetes = endevinalla.targetesDesbloquejades
@@ -67,7 +66,7 @@ export default function Nivell3() {
         .filter(Boolean);
 
       setTargetesDesbloquejades(novesTargetes);
-     // setNivell(nivell + 1); // ✅ pujar de nivell
+      marcaResolta(); // ⬅️ Important per marcar que s'ha resolt
     }
 
     setRespostaCorrecta(esCorrecte);
@@ -78,41 +77,48 @@ export default function Nivell3() {
     <div className={styles.body}>
       <img className={styles.imatge} src="/imatgesVaries/foto1.png" />
 
-      <div
-        className="contenidorBanner"
-        style={{
-          backgroundImage: "url('/imatgesVaries/enunciats.svg')",
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          height: "180px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "var(--color-brown800)",
-        }}
-      >
-        <p>{endevinalla.pregunta}</p>
-      </div>
+      {!resolta ? (
+        <>
+          <div className="contenidorBanner"
+            style={{
+              backgroundImage: "url('/imatgesVaries/enunciats.svg')",
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "180px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "var(--color-brown800)",
+            }}>
+            <p>{endevinalla.pregunta}</p>
+          </div>
 
-      <div className={styles.inputs}>
-        {paraula.map((_, i) => (
-          <InputLletra
-            key={i}
-            value={letters[i]}
-            index={i}
-            onChange={handleChange}
-            onBackspace={handleBackspace}
-            onNext={handleNext}
-            ref={(el) => (inputsRef.current[i] = el)}
-            correct={letterStates[i]}
-          />
-        ))}
-      </div>
+          <div className={styles.inputs}>
+            {paraula.map((_, i) => (
+              <InputLletra
+                key={i}
+                value={letters[i]}
+                index={i}
+                onChange={handleChange}
+                onBackspace={handleBackspace}
+                onNext={handleNext}
+                ref={(el) => (inputsRef.current[i] = el)}
+                correct={letterStates[i]}
+              />
+            ))}
+          </div>
 
-      <ButtonText onClick={comprovarResposta}>
-        <p>Enviar</p>
-      </ButtonText>
+          <ButtonText onClick={comprovarResposta}>
+            <p>Enviar</p>
+          </ButtonText>
+        </>
+      ) : (
+        <div className={styles.resolt}>
+          <p className="bodyMedium">✅ Ja has resolt aquesta endevinalla!</p>
+          <p className="bodyMedium">Has desbloquejat un nou vídeo. Ves fins a la plaça de Santa Maria per activar-lo!</p>
+        </div>
+      )}
 
       {mostraModal && (
         <ModalResposta

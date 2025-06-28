@@ -9,14 +9,13 @@ import { useNivell } from "../../context/nivellContext";
 import ModalResposta from "../modals/modalResposta";
 import ModalDesbloqueigTargetes from "../modals/modalDesbloqueigTargetes";
 
-export default function Nivell2() {
+export default function Nivell4({ resolta, marcaResolta }) {
   const endevinalla = endevinalles.find((e) => e.nivell === 4);
   const respostaCorrectaText = endevinalla.resposta.toUpperCase();
   const totalLletres = respostaCorrectaText.length;
 
   const { desbloquejaVideo } = useVideos();
   const { desbloquejaTargeta, getTargetaPerId } = useTargetes();
-  const { nivell, setNivell } = useNivell();
 
   const [letters, setLetters] = useState(Array(totalLletres).fill(""));
   const [letterStates, setLetterStates] = useState(Array(totalLletres).fill(null));
@@ -42,7 +41,7 @@ export default function Nivell2() {
     setMostraModal(true);
 
     if (esCorrecte) {
-      desbloquejaVideo(5); // o el que toqui
+      desbloquejaVideo(5); // vídeo associat al nivell 4
       endevinalla.targetesDesbloquejades.forEach((id) => desbloquejaTargeta(id));
 
       const targetes = endevinalla.targetesDesbloquejades
@@ -50,7 +49,7 @@ export default function Nivell2() {
         .filter(Boolean);
 
       setTargetesDesbloquejades(targetes);
-    //  setNivell(nivell + 1); // puja nivell
+      marcaResolta(); // indica que el nivell ha estat resolt
     }
   };
 
@@ -58,40 +57,49 @@ export default function Nivell2() {
     <div className={styles.body}>
       <img className={styles.imatge} src="/imatgesVaries/foto1.png" />
 
-      <div
-        className="contenidorBanner"
-        style={{
-          backgroundImage: "url('/imatgesVaries/enunciats.svg')",
-          backgroundSize: "contain",
-          backgroundRepeat: "no-repeat",
-          backgroundPosition: "center",
-          height: "180px",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          color: "var(--color-brown800)",
-        }}
-      >
-        <p>{endevinalla.pregunta}</p>
-      </div>
+      {!resolta ? (
+        <>
+          <div
+            className="contenidorBanner"
+            style={{
+              backgroundImage: "url('/imatgesVaries/enunciats.svg')",
+              backgroundSize: "contain",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: "180px",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              color: "var(--color-brown800)",
+            }}
+          >
+            <p>{endevinalla.pregunta}</p>
+          </div>
 
-      <div className={styles.inputs}>
-        {letters.map((lletra, i) => (
-          <InputLletra
-            index={i}
-            value={lletra}
-            onChange={handleChange}
-            onNext={() => { }}
-            onBackspace={() => { }}
-            correct={letterStates[i]}
-          />
+          <div className={styles.inputs}>
+            {letters.map((lletra, i) => (
+              <InputLletra
+                key={i}
+                index={i}
+                value={lletra}
+                onChange={handleChange}
+                onNext={() => {}}
+                onBackspace={() => {}}
+                correct={letterStates[i]}
+              />
+            ))}
+          </div>
 
-        ))}
-      </div>
-
-      <ButtonText onClick={comprovarResposta}>
-        <p>Enviar</p>
-      </ButtonText>
+          <ButtonText onClick={comprovarResposta}>
+            <p>Enviar</p>
+          </ButtonText>
+        </>
+      ) : (
+        <div className={styles.resolt}>
+          <p className="bodyMedium">✅ Ja has resolt aquesta endevinalla!</p>
+          <p className="bodyMedium">Has desbloquejat un vídeo nou! Ves a la placeta de Manuel Ribé per activarlo</p>
+        </div>
+      )}
 
       {mostraModal && (
         <ModalResposta

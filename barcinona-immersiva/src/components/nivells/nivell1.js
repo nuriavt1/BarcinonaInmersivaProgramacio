@@ -11,7 +11,7 @@ import ModalDesbloqueigTargetes from "../modals/modalDesbloqueigTargetes";
 
 
 
-export default function Nivell1() {
+export default function Nivell1({resolta, marcaResolta}) {
     // Paraules del nivell (com a grups de lletres)
     const paraules = [
         ["C", "A", "R", "R", "E", "R"],
@@ -77,6 +77,7 @@ const comprovarResposta = () => {
     });
 
     desbloquejaVideo(2);
+    marcaResolta();
 
     // Obté objectes complets de les targetes
     const novesTargetes = endevinalla.targetesDesbloquejades
@@ -88,6 +89,7 @@ const comprovarResposta = () => {
 
   setRespostaCorrecta(esCorrecte);
   setMostraModal(true); // mostra modal de correcte/incorrecte
+  
 };
 
 
@@ -98,7 +100,14 @@ const comprovarResposta = () => {
         <div className={styles.body}>
             {/*   <h2>Nivell 1</h2> */}
             <img className={styles.imatge} src="/imatgesVaries/foto1.png"></img>
-            <div className="contenidorBanner"
+
+
+
+
+{!resolta ? (
+    
+  <>
+              <div className="contenidorBanner"
                 style={{
                     backgroundImage: "url('/imatgesVaries/enunciats.svg')",
                     backgroundSize: "contain",
@@ -119,41 +128,46 @@ const comprovarResposta = () => {
                     {endevinalla.pregunta}
                 </p>
             </div>
+    <div className={styles.inputs}>
+      {paraules.reduce((acc, word, wordIndex) => {
+        const offset = paraules.slice(0, wordIndex).flat().length;
 
+        const inputs = word.map((_, i) => {
+          const globalIndex = offset + i;
+          return (
+            <InputLletra
+              key={globalIndex}
+              value={letters[globalIndex]}
+              index={globalIndex}
+              onChange={handleChange}
+              onBackspace={handleBackspace}
+              onNext={handleNext}
+              ref={(el) => (inputsRef.current[globalIndex] = el)}
+              correct={letterStates[globalIndex]}
+            />
+          );
+        });
 
+        acc.push(
+          <div key={wordIndex} style={{ display: "flex", gap: "1px" }}>
+            {inputs}
+          </div>
+        );
 
-            <div className={styles.inputs}>
-                {paraules.reduce((acc, word, wordIndex) => {
-                    const offset = paraules.slice(0, wordIndex).flat().length;
+        return acc;
+      }, [])}
+    </div>
 
-                    const inputs = word.map((_, i) => {
-                        const globalIndex = offset + i;
-                        return (
-                            <InputLletra
-                                key={globalIndex}
-                                value={letters[globalIndex]}
-                                index={globalIndex}
-                                onChange={handleChange}
-                                onBackspace={handleBackspace}
-                                onNext={handleNext}
-                                ref={(el) => (inputsRef.current[globalIndex] = el)}
-                                correct={letterStates[globalIndex]} // <-- AFEGIT
-                            />
+    <ButtonText onClick={comprovarResposta}><p>Enviar</p></ButtonText>
+  </>
+) : (
+  <div className={styles.resolt}>
+    <p className="bodyMedium">✅ Ja has resolt aquesta endevinalla!</p>
+     <p className="bodyMedium">Has debloquejat un video nou! Dirigeix-te a Plaça del rei per activar el vídeo!</p>
+    {/* Aquí pots posar un botó per continuar, veure el vídeo, o qualsevol altra acció */}
+  </div>
+)}
 
-                        );
-                    });
-
-                    acc.push(
-                        <div key={wordIndex} style={{ display: "flex", gap: "1px" }}>
-                            {inputs}
-                        </div>
-                    );
-
-                    return acc;
-                }, [])}
-            </div>
-
-            <ButtonText onClick={comprovarResposta}><p>Enviar</p></ButtonText>
        
 {mostraModal && (
   <ModalResposta

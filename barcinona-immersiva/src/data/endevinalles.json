@@ -6,7 +6,8 @@
         "targetesDesbloquejades": [
             20
         ],
-        "ubicació": "Plaça Sant Jaume"
+        "ubicació": "Plaça Sant Jaume",
+        "resolta": false
     },
     {
         "nivell": 2,
@@ -15,17 +16,19 @@
         "targetesDesbloquejades": [
             24
         ],
-        "ubicació": "Plaça del Pi"
+        "ubicació": "Plaça del Pi",
+         "resolta": false
     },
         {
         "nivell": 3,
-        "pregunta": "Resol el missatge Encriptat",
+        "pregunta": "L'aliment per excel·lència de la Barcelona Medieval. 4 lletres.",
         "resposta": "BLAT",
         "targetesDesbloquejades": [
             10
             
         ],
-        "ubicació": "Plaça de L'Àngel"
+        "ubicació": "Plaça de L'Àngel",
+         "resolta": false
     },
             {
         "nivell": 4,
@@ -34,6 +37,7 @@
         "targetesDesbloquejades": [
             25
         ],
-        "ubicació": "Carrer de Salomó Ben Adret"
+        "ubicació": "Carrer de Salomó Ben Adret",
+         "resolta": false
     }
 ]

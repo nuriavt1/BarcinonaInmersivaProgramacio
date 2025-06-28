@@ -21,13 +21,20 @@ export const UbicacioProvider = ({ children }) => {
             video.ubicació?.lat != null &&
             video.ubicació?.lng != null
           ) {
+
+             console.log(`📍 Comparant amb video: ${video.titol}`);
+    console.log(`   🧭 Posició actual:     ${latitude}, ${longitude}`);
+    console.log(`   🎯 Ubicació del vídeo: ${video.ubicació.lat}, ${video.ubicació.lng}`);
+
             const dist = calculaDistancia(
               latitude,
               longitude,
               video.ubicació.lat,
               video.ubicació.lng
             );
+              console.log(`📏 Distància fins a "${video.titol}": ${dist} km`);
             if (dist < 0.05) {
+                 console.log(`🎯 Estàs dins del radi! Desbloquejant: ${video.titol}`);
               setVideoDetectat(video);
               break;
             }
