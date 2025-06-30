@@ -7,8 +7,9 @@ function Home(){
     return(
 <div className={style.body}>
    <div className={style.logoTitle}>
-<p className="headline1" style={{ margin: 0, padding:0, color: "var(--color-white)"}}>Barcelona</p>
-    <p className="headline3" style={{ margin: 0, padding:0, color: "var(--color-white)" }}>La ciutat medieval</p>
+<p className="headline1" style={{ margin: 0, padding:0, color: "var(--color-white)"}}>Barcimed</p>
+    <p className="headline3" style={{ margin: 0, padding:0, color: "var(--color-white)" }}>Un recorrido inmersivo por la historia de Barcelona
+</p>
    </div >
    <div className={style.buttonsContainer}>
 <ButtonText onClick={() => navigate('/onBoarding')}>Començar</ButtonText>
