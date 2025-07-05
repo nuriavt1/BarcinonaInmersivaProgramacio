@@ -17,6 +17,7 @@ import { UbicacioProvider } from './context/ubicacioContext';
 import ModalGlobal from './components/modals/modalGlobal';
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { ConfigProvider } from './context/configContext';
 
 function LoadLastPath() {
   const navigate = useNavigate();
@@ -70,15 +71,17 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <NivellProvider>
-          <TargetesProvider>
-            <VideosProvider>
-              <UbicacioProvider>
-                <AppContent />
-              </UbicacioProvider>
-            </VideosProvider>
-          </TargetesProvider>
-        </NivellProvider>
+        <ConfigProvider>
+          <NivellProvider>
+            <TargetesProvider>
+              <VideosProvider>
+                <UbicacioProvider>
+                  <AppContent />
+                </UbicacioProvider>
+              </VideosProvider>
+            </TargetesProvider>
+          </NivellProvider>
+        </ConfigProvider>
       </Router>
     </div>
   );
