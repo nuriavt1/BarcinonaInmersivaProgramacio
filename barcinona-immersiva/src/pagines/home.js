@@ -21,7 +21,7 @@ function Home() {
             <div className={style.buttonsContainer}>
                 <ButtonText onClick={() => {
                     if (isFirstTime) {
-                        setIsFirstTime(false); // marca que ya no es primera vez
+                      //  setIsFirstTime(false); // marca que ya no es primera vez
                         navigate('/onBoarding2');
                     } else {
                         navigate('/nivells'); // acceso directo si ya ha entrado antes

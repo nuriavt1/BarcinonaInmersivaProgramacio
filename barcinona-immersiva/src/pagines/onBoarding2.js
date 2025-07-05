@@ -4,6 +4,7 @@ import style from '../estils/onboarding2.module.css';
 import ButtonText from '../components/botons/buttonText';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useConfig } from '../context/configContext';
 
 const variants = {
   enter: (direction) => ({
@@ -23,6 +24,8 @@ const variants = {
 function OnBoarding2() {
   const [[index, direction], setIndex] = useState([0, 0]);
   const navigate = useNavigate();
+   const { isFirstTime, setIsFirstTime } = useConfig();
+
 
   const slides = [
     {
@@ -35,12 +38,14 @@ Descobriràs la ciutat tal com era al segle XIV, a través d’imatges, enigmes 
       title: "Com funciona?",
       text: `En començar un capítol, la primera cosa que hauràs de fer és resoldre una endevinalla associada a una localització concreta. 
 Hauràs d’observar el teu voltant per trobar la resposta.`,
-      image: "/imatgesVaries/onboarding2.png",
+      image: "/imatgesBoarding/onboarding2.png",
+      text2: "Quan el completis, se’t revelarà el següent ubiació de la ruta, on podràs activar un fragment de vídeo 360° i descobrir la història de Marçal, el nostre protagonista.",
+      image2: "/imatgesBoarding/onboarding22.png",
     },
     {
       title: "Com funciona?",
       text: `Durant la ruta aniràs desbloquejant targetes de coneixement. Inclouen conceptes i explicacions detallades que pots consultar sempre que vulguis des de la biblioteca.`,
-      image: "/imatgesVaries/onboarding3.png",
+      image: "/imatgesBoarding/onboarding3.png",
     },
   ];
 
@@ -48,7 +53,12 @@ Hauràs d’observar el teu voltant per trobar la resposta.`,
     const newIndex = index + newDirection;
     if (newIndex < 0) return;
     if (newIndex >= slides.length) {
+       if (isFirstTime) {
+      navigate('/onBoarding');
+       setIsFirstTime(false);
+    } else {
       navigate('/nivells');
+    }
       return;
     }
     setIndex([newIndex, newDirection]);
@@ -60,7 +70,7 @@ Hauràs d’observar el teu voltant per trobar la resposta.`,
     <div className={style.body}>
       <div className={style.header}>
         <span className={style.title}>Inici</span>
-        <button className={style.close} onClick={() => navigate('/nivells')}>X</button>
+        <button className={style.close} onClick={() => navigate(isFirstTime ? '/onBoarding' : '/nivells')}>X</button>
       </div>
 
       <div className={style.bodyContainer}>
@@ -86,6 +96,8 @@ Hauràs d’observar el teu voltant per trobar la resposta.`,
               <h2 className="headline3">{slide.title}</h2>
               <p className="bodyLarge">{slide.text}</p>
               {slide.image && <img src={slide.image} alt="" className={style.image} />}
+              <p className="bodyLarge">{slide.text2}</p>
+              {slide.image && <img src={slide.image2} alt="" className={style.image2} />}
             </motion.div>
           </AnimatePresence>
         </div>
@@ -106,9 +118,11 @@ Hauràs d’observar el teu voltant per trobar la resposta.`,
               </button>
             )}
           </div>
-          <div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
-            <ButtonText onClick={() => paginate(1)}>SEGÜENT</ButtonText>
-          </div >
+<div style={{ display: "flex", width: "100%", justifyContent: "center" }}>
+  <ButtonText onClick={() => paginate(1)}>
+    {index === slides.length - 1 ? "ENTÈS!" : "SEGÜENT"}
+  </ButtonText>
+</div>
           <div style={{ display: "flex", width: "100%", justifyContent: "right" }}>
             {index < slides.length - 1 && (
               <button onClick={() => paginate(1)} className={style.arrow}>
