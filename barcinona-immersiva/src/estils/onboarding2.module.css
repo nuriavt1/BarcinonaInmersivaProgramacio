@@ -1,0 +1,6 @@
+.body {
+    background-color: var(--color-blue900);
+    color: var(--color-white);
+    height: 100vh;
+    width: 100%;
+}

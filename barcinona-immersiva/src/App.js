@@ -4,6 +4,7 @@ import Home from './pagines/home';
 import Credits from './pagines/credits';
 import Mapa from './pagines/app/mapa';
 import OnBoarding from './pagines/onBoarding';
+import OnBoarding2 from './pagines/onBoarding2';
 import Video from './pagines/app/video';
 import Biblioteca from './pagines/app/biblioteca';
 import Progressio from './pagines/app/progressio';
@@ -53,6 +54,7 @@ function AppContent() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="onBoarding" element={<OnBoarding />} />
+         <Route path="onBoarding2" element={<OnBoarding2 />} />
         <Route path="mapa" element={<Mapa />} />
         <Route path="video" element={<Video />} />
         <Route path="biblioteca" element={<Biblioteca />} />
