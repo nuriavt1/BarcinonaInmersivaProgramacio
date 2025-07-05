@@ -2,5 +2,75 @@
     background-color: var(--color-blue900);
     color: var(--color-white);
     height: 100vh;
+    display: flex;
+    flex-direction: column;
     width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrow {
+    color: var(--color-white);
+    all: unset;
+    padding: 5px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 1rem 0;
+}
+
+.dot {
+    width: 14px;
+    height: 14px;
+    background-color: #ccc;
+    transform: rotate(45deg);
+    opacity: 0.6;
+    transition: transform 0.3s ease, opacity 0.3s ease, background-color 0.3s ease;
+}
+
+.activeDot {
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    transform: rotate(45deg) scale(1.2);
+    opacity: 1;
+}
+
+.image {
+    width: 100%;
+    max-height: 40vh;
+    object-fit: contain;
+}
+
+.bodyContainer {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+    padding-bottom: 50px;
+
+
+}
+
+.slideWrapper{
+        padding-top: 3rem;
+        height: 70%;
 }
