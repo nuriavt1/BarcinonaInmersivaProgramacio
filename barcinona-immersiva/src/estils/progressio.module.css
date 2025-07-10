@@ -1,0 +1,10 @@
+.body{
+    background-color: var(--color-blue800);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+.content{
+ padding: 1.5rem;
+}

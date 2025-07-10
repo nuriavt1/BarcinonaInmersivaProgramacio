@@ -1,53 +1,44 @@
 import styles from "../../estils/videos.module.css";
 
-export default function CardVideo({ imatge, nom, url, estat }) {
+export default function CardVideo({ imatge, nom, estat, url }) {
   const esDesbloquejat = estat === "desbloquejat";
   const esActiu = estat === "actiu";
   const esBloquejat = estat === "bloquejat";
 
   const contingut = (
-    <>
+    <div className={styles.targeta}>
       {esBloquejat && (
-        <div className={styles.bloquejat}></div>
-      )}
-
- {esActiu && (
-  <>
-    <img
-      src={`/imatgesCaratulesVideo/${imatge}`}
-      alt={nom}
-      className={`${styles.imatge} ${styles.actiuImatge}`}
-    />
-    <p className={styles.nom}>{nom}</p>
-  </>
-)}
-
-
-      {esDesbloquejat && (
-        <>
+        <div className={styles.lockContainer}>
           <img
-            src={`/imatgesCaratulesVideo/${imatge}`}
-            alt={nom}
-            className={styles.imatge}
+            src="/imatgesVaries/candau.png"  // Ruta fixa dins public/
+            alt="bloquejat"
+            className={styles.candau}
           />
-          <p className={styles.nom}>{nom}</p>
-        </>
+        </div>
       )}
-    </>
+
+      {(esActiu || esDesbloquejat) && (
+        <img
+          src={`/imatgesCaratulesVideo/${imatge}`}
+          alt={nom}
+          className={`${styles.imatge} ${esActiu ? styles.actiuImatge : ""}`}
+        />
+      )}
+    </div>
   );
 
-  return esDesbloquejat ? (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
-      className={styles.targeta}
-    >
-      {contingut}
-    </a>
-  ) : (
-    <div className={styles.targeta + " " + (esBloquejat ? styles.grayscale : "")}>
-      {contingut}
+  return (
+    <div className={styles.targetaWrapper}>
+      {esDesbloquejat ? (
+        <a href={url} target="_blank" rel="noopener noreferrer">
+          {contingut}
+        </a>
+      ) : (
+        <>{contingut}</>
+      )}
+      {(esActiu || esDesbloquejat) && (
+        <p className={styles.nom}>{nom}</p>
+      )}
     </div>
   );
 }

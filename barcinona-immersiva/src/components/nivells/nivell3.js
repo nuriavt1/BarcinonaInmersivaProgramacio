@@ -115,7 +115,7 @@ export default function Nivell3({ resolta, marcaResolta }) {
         </>
       ) : (
         <div className={styles.resolt}>
-          <p className="bodyMedium">✅ Ja has resolt aquesta endevinalla!</p>
+          <p className="bodyMedium">Ja has resolt aquesta endevinalla!</p>
           <p className="bodyMedium">Has desbloquejat un nou vídeo. Ves fins a la plaça de Santa Maria per activar-lo!</p>
         </div>
       )}

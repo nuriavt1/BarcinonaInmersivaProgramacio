@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import style from '../estils/onboarding2.module.css';
 import ButtonText from '../components/botons/buttonText';
+import CloseButton from '../components/botons/closeButton';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useConfig } from '../context/configContext';
@@ -69,8 +70,7 @@ Hauràs d’observar el teu voltant per trobar la resposta.`,
   return (
     <div className={style.body}>
       <div className={style.header}>
-        <span className={style.title}>Inici</span>
-        <button className={style.close} onClick={() => navigate(isFirstTime ? '/onBoarding' : '/nivells')}>X</button>
+     <CloseButton  onClick={() => navigate(isFirstTime ? '/onBoarding' : '/nivells')}></CloseButton>
       </div>
 
       <div className={style.bodyContainer}>

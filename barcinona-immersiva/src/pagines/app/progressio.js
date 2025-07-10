@@ -3,6 +3,7 @@ import CardVideo from "../../components/video/cardVideo";
 import { useVideos } from '../../context/videoContext';
 import { useMemo } from 'react';
 import { useComprovaUbicacio } from "../../hooks/useComprovaUbicacio";
+import style from "../../estils/progressio.module.css";
 
 function Progressio() {
   const { videos, getVideosActius } = useVideos();
@@ -13,10 +14,9 @@ function Progressio() {
 
 
   return (
-    <div>
-      <p>Aquesta és la pàgina de Progrés</p>
-
-      <p>VIDEOS ACTIVATS</p>
+    <div className={style.body}>
+<div className={style.content}>
+<p className="headline2" style={{color: "var(--color-white)"}}>VÍDEOS</p>
 
       {videosTots.map((video) => (
         <div key={video.idVideo}>
@@ -39,6 +39,8 @@ function Progressio() {
           )}
         </div>
       ))}
+</div>
+
 
       <FooterMenu />
     </div>

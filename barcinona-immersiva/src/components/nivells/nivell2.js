@@ -92,7 +92,7 @@ export default function Nivell2({ resolta, marcaResolta }) {
         </>
       ) : (
         <div className={styles.resolt}>
-          <p className="bodyMedium">✅ Ja has resolt aquesta endevinalla!</p>
+          <p className="bodyMedium">Ja has resolt aquesta endevinalla!</p>
           <p className="bodyMedium">Has desbloquejat un vídeo nou! Ves cap a la nova ubicació per activar-lo.</p>
         </div>
       )}

@@ -162,7 +162,7 @@ const comprovarResposta = () => {
   </>
 ) : (
   <div className={styles.resolt}>
-    <p className="bodyMedium">✅ Ja has resolt aquesta endevinalla!</p>
+    <p className="bodyMedium">Ja has resolt aquesta endevinalla!</p>
      <p className="bodyMedium">Has debloquejat un video nou! Dirigeix-te a Plaça del rei per activar el vídeo!</p>
     {/* Aquí pots posar un botó per continuar, veure el vídeo, o qualsevol altra acció */}
   </div>
