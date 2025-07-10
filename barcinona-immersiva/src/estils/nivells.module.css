@@ -6,6 +6,8 @@
     background-color: var(--color-brown100);
     padding-bottom: 180px;
     gap: 30px;
+    min-height: 100vh;
+    
 }
 
 .inputs {

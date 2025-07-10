@@ -54,40 +54,48 @@ export default function ModalDesbloqueigVideo({ video, onClose }) {
   const desbloquejat = video.debloquejat && video.ubicacióDesbloquejada;
 
   return (
-    <div className={styles.modalOverlay}>
-      <div className={styles.modalContent}
-       style={{
-    display: (mostraModalDesbloqueigTargetes || mostraModalCapitolNou) ? "none" : "block"
-  }}
-      >
-        <h3>NOU VIDEO DESBLOQUEJAT! {video.titol}</h3>
-        <p>Reprodueix el vídeo per continuar amb la història</p>
+<div className={styles.modalOverlay}>
+  <div
+    className={styles.modalContent}
+    style={{
+      display: (mostraModalDesbloqueigTargetes || mostraModalCapitolNou) ? "none" : "flex"
+    }}
+  >
+    <div className={styles.nouEtiqueta}>NOU!</div>
 
-        <VideoModalCard
-          imatge={video.imatgeCaratula}
-          nom={video.titol}
-          url={video.url}
-          estat={video.debloquejat}
-        />
-        <ButtonText onClick={handleDesbloqueig}>
-          <p>Reprodueix vídeo</p>
-        </ButtonText>
-      </div>
-
-      {mostraModalDesbloqueigTargetes && (
-        <ModalDesbloqueigTargetes
-          targetes={idsTargetes.map(id => targetes.find(t => t.id === id)).filter(Boolean)}
-          onClose={handleTancaDesbloqueig}
-        />
-      )}
-
-      {mostraModalCapitolNou && (
-        <ModalCapitolNou
-          onClose={handleTancaCapitolNou}
-        />
-      )}
-
-
+    <div className={styles.videoBox}>
+      <img
+        src={`/imatgesCaratulesVideo/${video.imatgeCaratula}`}
+        alt={video.titol}
+        className={styles.videoImg}
+      />
     </div>
+
+   <h2 className={`${styles.titol} headline2`} style={{ color: "var(--color-white)" }}>
+  NOU VÍDEO DESBLOQUEJAT!
+</h2>
+
+<p className={`${styles.descripcio} bodyLargeBold`} style={{ color: "var(--color-white)" }}>
+  Reprodueix el vídeo per continuar la història.
+</p>
+
+
+    <ButtonText onClick={handleDesbloqueig}>
+      <p>REPRODUEIX VÍDEO ✔</p>
+    </ButtonText>
+  </div>
+
+  {mostraModalDesbloqueigTargetes && (
+    <ModalDesbloqueigTargetes
+      targetes={idsTargetes.map(id => targetes.find(t => t.id === id)).filter(Boolean)}
+      onClose={handleTancaDesbloqueig}
+    />
+  )}
+
+  {mostraModalCapitolNou && (
+    <ModalCapitolNou onClose={handleTancaCapitolNou} />
+  )}
+</div>
+
   );
 }
