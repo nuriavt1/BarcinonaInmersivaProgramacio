@@ -61,7 +61,7 @@ export default function ModalDesbloqueigVideo({ video, onClose }) {
       display: (mostraModalDesbloqueigTargetes || mostraModalCapitolNou) ? "none" : "flex"
     }}
   >
-    <div className={styles.nouEtiqueta}>NOU!</div>
+   {/* <div className={styles.nouEtiqueta}>NOU!</div> */} 
 
     <div className={styles.videoBox}>
       <img
